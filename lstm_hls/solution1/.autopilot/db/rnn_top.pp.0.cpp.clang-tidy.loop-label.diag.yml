@@ -1,0 +1,67 @@
+---
+MainSourceFile:  'D:/BaiduNetdiskDownload/lab3_student/lstm_hls/solution1/.autopilot/db/rnn_top.pp.0.cpp'
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1213_1:  '
+    FileOffset:      1213
+    FilePath:        'D:\Xilinx\Vitis_HLS\2023.1\common\technology\autopilot\etc\ap_int_base.h'
+    Replacements:    
+      - FilePath:        'D:\BaiduNetdiskDownload\lab3_student\lstm_hls\solution1\.autopilot\db\rnn_top.pp.0.cpp'
+        Offset:          96740
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1213_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_676_1:  '
+    FileOffset:      676
+    FilePath:        'D:\Xilinx\Vitis_HLS\2023.1\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'D:\BaiduNetdiskDownload\lab3_student\lstm_hls\solution1\.autopilot\db\rnn_top.pp.0.cpp'
+        Offset:          324063
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_676_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_690_1:  '
+    FileOffset:      690
+    FilePath:        'D:\Xilinx\Vitis_HLS\2023.1\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'D:\BaiduNetdiskDownload\lab3_student\lstm_hls\solution1\.autopilot\db\rnn_top.pp.0.cpp'
+        Offset:          324527
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_690_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_704_1:  '
+    FileOffset:      704
+    FilePath:        'D:\Xilinx\Vitis_HLS\2023.1\common\technology\autopilot\etc\ap_int_ref.h'
+    Replacements:    
+      - FilePath:        'D:\BaiduNetdiskDownload\lab3_student\lstm_hls\solution1\.autopilot\db\rnn_top.pp.0.cpp'
+        Offset:          324992
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_704_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_1247_1:  '
+    FileOffset:      1247
+    FilePath:        'D:\Xilinx\Vitis_HLS\2023.1\common\technology\autopilot\etc\ap_fixed_base.h'
+    Replacements:    
+      - FilePath:        'D:\BaiduNetdiskDownload\lab3_student\lstm_hls\solution1\.autopilot\db\rnn_top.pp.0.cpp'
+        Offset:          607664
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_1247_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_10_1:  '
+    FileOffset:      10
+    FilePath:        'D:\BaiduNetdiskDownload\lab3_student\lstm_hls\rnn_top.cpp'
+    Replacements:    
+      - FilePath:        'D:\BaiduNetdiskDownload\lab3_student\lstm_hls\solution1\.autopilot\db\rnn_top.pp.0.cpp'
+        Offset:          991605
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_10_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_23_2:  '
+    FileOffset:      23
+    FilePath:        'D:\BaiduNetdiskDownload\lab3_student\lstm_hls\rnn_top.cpp'
+    Replacements:    
+      - FilePath:        'D:\BaiduNetdiskDownload\lab3_student\lstm_hls\solution1\.autopilot\db\rnn_top.pp.0.cpp'
+        Offset:          991780
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_23_2: '
+...

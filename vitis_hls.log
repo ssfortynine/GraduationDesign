@@ -1,0 +1,57 @@
+ECHO 处于关闭状态。
+ECHO 处于关闭状态。
+NOTE: Using modified tcl85t.dll from https://gitenterprise.xilinx.com/ACT/vitis_hls_tcl
+INFO: [HLS 200-10] Running 'D:/Xilinx/Vitis_HLS/2023.1/bin/unwrapped/win64.o/vitis_hls.exe'
+INFO: [HLS 200-10] For user 'ljh' on host 'desktop-fkiqqdj' (Windows NT_amd64 version 6.2) on Sun Apr 21 15:02:03 +0800 2024
+INFO: [HLS 200-10] In directory 'D:/BaiduNetdiskDownload/lab3_student'
+Sourcing Tcl script 'D:/BaiduNetdiskDownload/lab3_student/lstm_hls/solution1/csynth.tcl'
+INFO: [HLS 200-1510] Running: source D:/BaiduNetdiskDownload/lab3_student/lstm_hls/solution1/csynth.tcl
+INFO: [HLS 200-1510] Running: open_project lstm_hls 
+INFO: [HLS 200-10] Opening project 'D:/BaiduNetdiskDownload/lab3_student/lstm_hls'.
+INFO: [HLS 200-1510] Running: set_top LSTM_Top 
+INFO: [HLS 200-1510] Running: add_files lstm_hls/rnn.cpp 
+INFO: [HLS 200-10] Adding design file 'lstm_hls/rnn.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files lstm_hls/rnn.h 
+INFO: [HLS 200-10] Adding design file 'lstm_hls/rnn.h' to the project
+INFO: [HLS 200-1510] Running: add_files lstm_hls/rnn_top.cpp 
+INFO: [HLS 200-10] Adding design file 'lstm_hls/rnn_top.cpp' to the project
+INFO: [HLS 200-1510] Running: add_files lstm_hls/utils.h 
+INFO: [HLS 200-10] Adding design file 'lstm_hls/utils.h' to the project
+INFO: [HLS 200-1510] Running: add_files lstm_hls/weight.h 
+INFO: [HLS 200-10] Adding design file 'lstm_hls/weight.h' to the project
+INFO: [HLS 200-1510] Running: add_files -tb lstm_hls/main.cpp 
+INFO: [HLS 200-10] Adding test bench file 'lstm_hls/main.cpp' to the project
+INFO: [HLS 200-1510] Running: open_solution solution1 -flow_target vivado 
+INFO: [HLS 200-10] Opening solution 'D:/BaiduNetdiskDownload/lab3_student/lstm_hls/solution1'.
+INFO: [SYN 201-201] Setting up clock 'default' with a period of 10ns.
+INFO: [HLS 200-1611] Setting target device to 'xczu5eg-sfvc784-1-e'
+INFO: [HLS 200-1505] Using flow_target 'vivado'
+Resolution: For help on HLS 200-1505 see www.xilinx.com/cgi-bin/docs/rdoc?v=2023.1;t=hls+guidance;d=200-1505.html
+INFO: [HLS 200-1510] Running: set_part xczu5eg-sfvc784-1-e 
+INFO: [HLS 200-1510] Running: create_clock -period 10 -name default 
+INFO: [HLS 200-1510] Running: source ./lstm_hls/solution1/directives.tcl
+INFO: [HLS 200-1510] Running: set_directive_top -name LSTM_Top LSTM_Top 
+INFO: [HLS 200-1510] Running: csynth_design 
+INFO: [HLS 200-111] Finished File checks and directory preparation: CPU user time: 0 seconds. CPU system time: 0 seconds. Elapsed time: 0.169 seconds; current allocated memory: 107.527 MB.
+INFO: [HLS 200-10] Analyzing design file 'lstm_hls/rnn.cpp' ... 
+INFO: [HLS 200-10] Analyzing design file 'lstm_hls/rnn_top.cpp' ... 
+INFO: [HLS 200-111] Finished Source Code Analysis and Preprocessing: CPU user time: 1 seconds. CPU system time: 0 seconds. Elapsed time: 8.572 seconds; current allocated memory: 109.234 MB.
+INFO: [HLS 200-777] Using interface defaults for 'Vivado' flow target.
+INFO: [HLS 214-131] Inlining function 'float pop_stream<float, 1, 1, 1>(hls::axis<ap_uint<(sizeof (float)) * (8)>, 1, 1, 1> const&)' into 'void mnist_lstm<float, 1, 1, 1>(hls::axis<ap_uint<32>, 1ul, 1ul, 1ul>*, hls::axis<ap_uint<32>, 1ul, 1ul, 1ul>*)' (lstm_hls/rnn_top.cpp:13:14)
+INFO: [HLS 214-131] Inlining function 'hls::axis<ap_uint<(sizeof (float)) * (8)>, 1, 1, 1> push_stream<float, 1, 1, 1>(float const&, bool)' into 'void mnist_lstm<float, 1, 1, 1>(hls::axis<ap_uint<32>, 1ul, 1ul, 1ul>*, hls::axis<ap_uint<32>, 1ul, 1ul, 1ul>*)' (lstm_hls/rnn_top.cpp:26:11)
+ERROR: [HLS 214-244] in function 'void mnist_lstm<float, 1, 1, 1>(hls::axis<ap_uint<32>, 1ul, 1ul, 1ul>*, hls::axis<ap_uint<32>, 1ul, 1ul, 1ul>*)': Failed to implement stream interface on variable 'in'. Each array element of 'in' must: (a) be accessed only once, (b) read or write the whole array element in one operation and (c) be accessed in sequential order. (lstm_hls/utils.h:32:32)
+Resolution: For help on HLS 214-244 see www.xilinx.com/cgi-bin/docs/rdoc?v=2023.1;t=hls+guidance;d=214-244.html
+ERROR: [HLS 200-1715] Encountered problem during source synthesis
+INFO: [HLS 200-111] Finished Command csynth_design CPU user time: 1 seconds. CPU system time: 1 seconds. Elapsed time: 11.566 seconds; current allocated memory: 2.281 MB.
+Pre-synthesis failed.
+    while executing
+"source D:/BaiduNetdiskDownload/lab3_student/lstm_hls/solution1/csynth.tcl"
+    invoked from within
+"hls::main D:/BaiduNetdiskDownload/lab3_student/lstm_hls/solution1/csynth.tcl"
+    ("uplevel" body line 1)
+    invoked from within
+"uplevel 1 hls::main {*}$newargs"
+    (procedure "hls_proc" line 16)
+    invoked from within
+"hls_proc [info nameofexecutable] $argv"
+INFO: [HLS 200-112] Total CPU user time: 2 seconds. Total CPU system time: 1 seconds. Total elapsed time: 13.267 seconds; peak allocated memory: 109.789 MB.

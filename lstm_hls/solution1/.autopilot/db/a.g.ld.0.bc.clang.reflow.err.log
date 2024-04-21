@@ -1,0 +1,4 @@
+remark: lstm_hls/rnn_top.cpp:13:14: Inlining function 'float pop_stream<float, 1, 1, 1>(hls::axis<ap_uint<(sizeof (float)) * (8)>, 1, 1, 1> const&)' into 'void mnist_lstm<float, 1, 1, 1>(hls::axis<ap_uint<32>, 1ul, 1ul, 1ul>*, hls::axis<ap_uint<32>, 1ul, 1ul, 1ul>*)'
+remark: lstm_hls/rnn_top.cpp:26:11: Inlining function 'hls::axis<ap_uint<(sizeof (float)) * (8)>, 1, 1, 1> push_stream<float, 1, 1, 1>(float const&, bool)' into 'void mnist_lstm<float, 1, 1, 1>(hls::axis<ap_uint<32>, 1ul, 1ul, 1ul>*, hls::axis<ap_uint<32>, 1ul, 1ul, 1ul>*)'
+error: lstm_hls/utils.h:32:32: in function 'void mnist_lstm<float, 1, 1, 1>(hls::axis<ap_uint<32>, 1ul, 1ul, 1ul>*, hls::axis<ap_uint<32>, 1ul, 1ul, 1ul>*)': Failed to implement stream interface on variable 'in'. Each array element of 'in' must: (a) be accessed only once, (b) read or write the whole array element in one operation and (c) be accessed in sequential order.
+error: Fail to Synthesize.

@@ -1,0 +1,175 @@
+---
+MainSourceFile:  'D:/BaiduNetdiskDownload/lab3_student/lstm_hls/solution1/.autopilot/db/rnn.pp.0.cpp'
+Diagnostics:     
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_22_1:  '
+    FileOffset:      22
+    FilePath:        'D:\BaiduNetdiskDownload\lab3_student\lstm_hls\rnn.cpp'
+    Replacements:    
+      - FilePath:        'D:\BaiduNetdiskDownload\lab3_student\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp'
+        Offset:          2088995
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_22_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_34_1:  '
+    FileOffset:      34
+    FilePath:        'D:\BaiduNetdiskDownload\lab3_student\lstm_hls\rnn.cpp'
+    Replacements:    
+      - FilePath:        'D:\BaiduNetdiskDownload\lab3_student\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp'
+        Offset:          2089126
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_34_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_45_1:  '
+    FileOffset:      45
+    FilePath:        'D:\BaiduNetdiskDownload\lab3_student\lstm_hls\rnn.cpp'
+    Replacements:    
+      - FilePath:        'D:\BaiduNetdiskDownload\lab3_student\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp'
+        Offset:          2089288
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_45_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_56_1:  '
+    FileOffset:      56
+    FilePath:        'D:\BaiduNetdiskDownload\lab3_student\lstm_hls\rnn.cpp'
+    Replacements:    
+      - FilePath:        'D:\BaiduNetdiskDownload\lab3_student\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp'
+        Offset:          2089419
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_56_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_80_1:  '
+    FileOffset:      80
+    FilePath:        'D:\BaiduNetdiskDownload\lab3_student\lstm_hls\rnn.cpp'
+    Replacements:    
+      - FilePath:        'D:\BaiduNetdiskDownload\lab3_student\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp'
+        Offset:          2089792
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_80_1: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_107_2:  '
+    FileOffset:      107
+    FilePath:        'D:\BaiduNetdiskDownload\lab3_student\lstm_hls\rnn.cpp'
+    Replacements:    
+      - FilePath:        'D:\BaiduNetdiskDownload\lab3_student\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp'
+        Offset:          2089851
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_107_2: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_108_3:  '
+    FileOffset:      108
+    FilePath:        'D:\BaiduNetdiskDownload\lab3_student\lstm_hls\rnn.cpp'
+    Replacements:    
+      - FilePath:        'D:\BaiduNetdiskDownload\lab3_student\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp'
+        Offset:          2089912
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_108_3: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_114_4:  '
+    FileOffset:      114
+    FilePath:        'D:\BaiduNetdiskDownload\lab3_student\lstm_hls\rnn.cpp'
+    Replacements:    
+      - FilePath:        'D:\BaiduNetdiskDownload\lab3_student\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp'
+        Offset:          2089973
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_114_4: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_116_5:  '
+    FileOffset:      116
+    FilePath:        'D:\BaiduNetdiskDownload\lab3_student\lstm_hls\rnn.cpp'
+    Replacements:    
+      - FilePath:        'D:\BaiduNetdiskDownload\lab3_student\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp'
+        Offset:          2090023
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_116_5: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_128_6:  '
+    FileOffset:      128
+    FilePath:        'D:\BaiduNetdiskDownload\lab3_student\lstm_hls\rnn.cpp'
+    Replacements:    
+      - FilePath:        'D:\BaiduNetdiskDownload\lab3_student\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp'
+        Offset:          2090181
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_128_6: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_130_7:  '
+    FileOffset:      130
+    FilePath:        'D:\BaiduNetdiskDownload\lab3_student\lstm_hls\rnn.cpp'
+    Replacements:    
+      - FilePath:        'D:\BaiduNetdiskDownload\lab3_student\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp'
+        Offset:          2090231
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_130_7: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_142_8:  '
+    FileOffset:      142
+    FilePath:        'D:\BaiduNetdiskDownload\lab3_student\lstm_hls\rnn.cpp'
+    Replacements:    
+      - FilePath:        'D:\BaiduNetdiskDownload\lab3_student\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp'
+        Offset:          2090389
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_142_8: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_144_9:  '
+    FileOffset:      144
+    FilePath:        'D:\BaiduNetdiskDownload\lab3_student\lstm_hls\rnn.cpp'
+    Replacements:    
+      - FilePath:        'D:\BaiduNetdiskDownload\lab3_student\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp'
+        Offset:          2090439
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_144_9: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_156_10:  '
+    FileOffset:      156
+    FilePath:        'D:\BaiduNetdiskDownload\lab3_student\lstm_hls\rnn.cpp'
+    Replacements:    
+      - FilePath:        'D:\BaiduNetdiskDownload\lab3_student\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp'
+        Offset:          2090596
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_156_10: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_158_11:  '
+    FileOffset:      158
+    FilePath:        'D:\BaiduNetdiskDownload\lab3_student\lstm_hls\rnn.cpp'
+    Replacements:    
+      - FilePath:        'D:\BaiduNetdiskDownload\lab3_student\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp'
+        Offset:          2090646
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_158_11: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_170_12:  '
+    FileOffset:      170
+    FilePath:        'D:\BaiduNetdiskDownload\lab3_student\lstm_hls\rnn.cpp'
+    Replacements:    
+      - FilePath:        'D:\BaiduNetdiskDownload\lab3_student\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp'
+        Offset:          2090804
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_170_12: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_181_13:  '
+    FileOffset:      181
+    FilePath:        'D:\BaiduNetdiskDownload\lab3_student\lstm_hls\rnn.cpp'
+    Replacements:    
+      - FilePath:        'D:\BaiduNetdiskDownload\lab3_student\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp'
+        Offset:          2090961
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_181_13: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_193_14:  '
+    FileOffset:      193
+    FilePath:        'D:\BaiduNetdiskDownload\lab3_student\lstm_hls\rnn.cpp'
+    Replacements:    
+      - FilePath:        'D:\BaiduNetdiskDownload\lab3_student\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp'
+        Offset:          2091114
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_193_14: '
+  - DiagnosticName:  xilinx-label-all-loops
+    Message:         'Added loop label VITIS_LOOP_193_15:  '
+    FileOffset:      193
+    FilePath:        'D:\BaiduNetdiskDownload\lab3_student\lstm_hls\rnn.cpp'
+    Replacements:    
+      - FilePath:        'D:\BaiduNetdiskDownload\lab3_student\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp'
+        Offset:          2091143
+        Length:          0
+        ReplacementText: 'VITIS_LOOP_193_15: '
+...

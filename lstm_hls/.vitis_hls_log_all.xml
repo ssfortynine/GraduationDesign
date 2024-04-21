@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
+  <errorLogs>
+    <logs>
+      <synLog>
+        <logs message="ERROR: [HLS 200-1715] Encountered problem during source synthesis" projectName="lstm_hls" solutionName="solution1" date="2024-04-21T15:02:16.203+0800"/>
+        <logs message="ERROR: [HLS 214-244] in function 'void mnist_lstm&lt;float, 1, 1, 1>(hls::axis&lt;ap_uint&lt;32>, 1ul, 1ul, 1ul>*, hls::axis&lt;ap_uint&lt;32>, 1ul, 1ul, 1ul>*)': Failed to implement stream interface on variable 'in'. Each array element of 'in' must: (a) be accessed only once, (b) read or write the whole array element in one operation and (c) be accessed in sequential order. (lstm_hls/utils.h:32:32)&#xD;&#xA;Resolution: For help on HLS 214-244 see www.xilinx.com/cgi-bin/docs/rdoc?v=2023.1;t=hls+guidance;d=214-244.html" projectName="lstm_hls" solutionName="solution1" date="2024-04-21T15:02:16.190+0800"/>
+      </synLog>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </errorLogs>
+  <warningLogs>
+    <logs>
+      <synLog/>
+      <simLog/>
+      <mgLog/>
+      <packageLog/>
+      <csimLog/>
+    </logs>
+  </warningLogs>
+</vivadoHLSLog:LogRoot>

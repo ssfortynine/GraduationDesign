@@ -1,0 +1,50 @@
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: lstm_hls/rnn_top.cpp, Line: 13, Column: 14 }
+Function:        _Z10mnist_lstmIfLi1ELi1ELi1EEvPN3hls4axisI7ap_uintILi32EELm1ELm1ELm1EEES5_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'float pop_stream<float, 1, 1, 1>(hls::axis<ap_uint<(sizeof (float)) * (8)>, 1, 1, 1> const&)'
+    DebugLoc:        { File: lstm_hls/utils.h, Line: 15, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void mnist_lstm<float, 1, 1, 1>(hls::axis<ap_uint<32>, 1ul, 1ul, 1ul>*, hls::axis<ap_uint<32>, 1ul, 1ul, 1ul>*)'
+    DebugLoc:        { File: lstm_hls/rnn_top.cpp, Line: 6, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            inline
+Name:            AlwaysInline
+DebugLoc:        { File: lstm_hls/rnn_top.cpp, Line: 26, Column: 11 }
+Function:        _Z10mnist_lstmIfLi1ELi1ELi1EEvPN3hls4axisI7ap_uintILi32EELm1ELm1ELm1EEES5_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hls::axis<ap_uint<(sizeof (float)) * (8)>, 1, 1, 1> push_stream<float, 1, 1, 1>(float const&, bool)'
+    DebugLoc:        { File: lstm_hls/utils.h, Line: 39, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'void mnist_lstm<float, 1, 1, 1>(hls::axis<ap_uint<32>, 1ul, 1ul, 1ul>*, hls::axis<ap_uint<32>, 1ul, 1ul, 1ul>*)'
+    DebugLoc:        { File: lstm_hls/rnn_top.cpp, Line: 6, Column: 0 }
+  - String:          ''''
+...
+--- !HLSUnsupported
+Pass:            reflow-entirety-access-check
+Name:            NonEntiretyAccessOnArrayToStream
+DebugLoc:        { File: lstm_hls/utils.h, Line: 32, Column: 32 }
+Function:        _Z10mnist_lstmIfLi1ELi1ELi1EEvPN3hls4axisI7ap_uintILi32EELm1ELm1ELm1EEES5_
+Args:            
+  - String:          'in function '''
+  - Function:        'void mnist_lstm<float, 1, 1, 1>(hls::axis<ap_uint<32>, 1ul, 1ul, 1ul>*, hls::axis<ap_uint<32>, 1ul, 1ul, 1ul>*)'
+    DebugLoc:        { File: lstm_hls/rnn_top.cpp, Line: 6, Column: 0 }
+  - String:          ''': '
+  - String:          'Failed to implement stream interface on variable '''
+  - Name:            in
+  - String:          '''. Each array element of '''
+  - Name:            in
+  - String:          ''' must: (a) be accessed only once, (b) read or write the whole array element in one operation and (c) be accessed in sequential order.'
+...
+--- !HLSReportFatalError
+Pass:            reflow-entirety-access-check
+Name:            HLSFatalError
+Args:            
+  - Msg:             Fail to Synthesize.
+...
