@@ -1,0 +1,23 @@
+cscope
+ctags
+.ctags
+
+# Ignore the generated files
+overlays/_xclbin*
+overlays/_xo*
+overlays/.Xil
+overlays/.src
+overlays/*.xclbin
+build/finn
+*.zip
+*.log
+*.jou
+*.info
+*.ltx
+*.pb
+*.link_summary
+*.onnx
+*.pyc
+output_*/
+release/
+*.egg-info
