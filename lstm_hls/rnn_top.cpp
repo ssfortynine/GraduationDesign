@@ -2,7 +2,7 @@
 #include "rnn.h"
 
 template <typename T, int U, int TI, int TD>
-void mnist_lstm(stream_t in[IMG_SIZE], stream_t out[CLASS_NUM])
+void mnist_lstm(hls::stream<stream_t> &in, hls::stream<stream_t> &out)
 {
 	float buf_in[IMG_SIZE], img_dat[IMG_SIZE], res[CLASS_NUM];
 
