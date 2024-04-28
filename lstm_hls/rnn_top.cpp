@@ -10,7 +10,7 @@ void mnist_lstm(hls::stream<stream_t> &in, hls::stream<stream_t> &out)
 	for (int i = 0; i < IMG_SIZE; i++)
 	{
 #pragma HLS PIPELINE II=1
-		buf_in[i] = pop_stream <T, U, TI, TD> (in[i]);
+		buf_in[i] = pop_stream <T, U, TI, TD> (in.read());
 		img_dat[i] = buf_in[i] / 255;
 	}
 
@@ -23,14 +23,14 @@ void mnist_lstm(hls::stream<stream_t> &in, hls::stream<stream_t> &out)
 	for (int i = 0; i < CLASS_NUM; i++)
 	{
 #pragma HLS PIPELINE II=1
-		out[i] = push_stream <T, U, TI, TD> (res[i], (i == CLASS_NUM - 1));
+		out.write(push_stream <T, U, TI, TD> (res[i], (i == CLASS_NUM - 1)));
 	}
 
 	return;
 }
 
 // THIS IS THE TOP LEVEL DESIGN THAT WILL BE SYNTHESIZED
-void LSTM_Top(stream_t in[IMG_SIZE], stream_t out[CLASS_NUM])
+void LSTM_Top(hls::stream<stream_t> &in, hls::stream<stream_t> &out)
 {
 #pragma HLS INTERFACE ap_ctrl_none port=return
 #pragma HLS INTERFACE axis port=in

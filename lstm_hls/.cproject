@@ -59,7 +59,7 @@
                                     									
                                     <listOptionValue builtIn="false" value="D:/Xilinx/Vitis_HLS/2023.1/win64/tools/auto_cc/include"/>
                                     									
-                                    <listOptionValue builtIn="false" value="D:/BaiduNetdiskDownload/lab3_student"/>
+                                    <listOptionValue builtIn="false" value="D:/BaiduNetdiskDownload/GraduationDesign"/>
                                     									
                                     <listOptionValue builtIn="false" value="D:/Xilinx/Vitis_HLS/2023.1/include"/>
                                     									
@@ -70,6 +70,8 @@
                                     <listOptionValue builtIn="false" value="D:/new"/>
                                     									
                                     <listOptionValue builtIn="false" value="D:/Software/Xilinx/Vivado/2018.3/win64/tools/auto_cc/include"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="D:/BaiduNetdiskDownload/lab3_student"/>
                                     									
                                     <listOptionValue builtIn="false" value="D:/Software/Xilinx/Vivado/2018.3/include/ap_sysc"/>
                                     									
@@ -107,7 +109,7 @@
                                     									
                                     <listOptionValue builtIn="false" value="D:/Xilinx/Vitis_HLS/2023.1/win64/tools/auto_cc/include"/>
                                     									
-                                    <listOptionValue builtIn="false" value="D:/BaiduNetdiskDownload/lab3_student"/>
+                                    <listOptionValue builtIn="false" value="D:/BaiduNetdiskDownload/GraduationDesign"/>
                                     									
                                     <listOptionValue builtIn="false" value="D:/Xilinx/Vitis_HLS/2023.1/include"/>
                                     									
@@ -118,6 +120,8 @@
                                     <listOptionValue builtIn="false" value="D:/new"/>
                                     									
                                     <listOptionValue builtIn="false" value="D:/Software/Xilinx/Vivado/2018.3/win64/tools/auto_cc/include"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="D:/BaiduNetdiskDownload/lab3_student"/>
                                     									
                                     <listOptionValue builtIn="false" value="D:/Software/Xilinx/Vivado/2018.3/include/ap_sysc"/>
                                     									
@@ -189,6 +193,36 @@
                         					
                     </folderInfo>
                     					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.debug.173771842.380155868" name="main.cpp" rcbsApplicability="disable" resourcePath="testbench/main.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1945591825.688959105">
+                        						
+                        <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1945591825.688959105" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1945591825">
+                            							
+                            <option id="gnu.cpp.compiler.option.preprocessor.def.465045790" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
+                            							
+                            <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.cpp.compiler.option.include.paths.1970046783" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+                                								
+                                <listOptionValue builtIn="false" value="D:/Xilinx/Vitis_HLS/2023.1/include/ap_sysc"/>
+                                								
+                                <listOptionValue builtIn="false" value="D:/Xilinx/Vitis_HLS/2023.1/include/etc"/>
+                                								
+                                <listOptionValue builtIn="false" value="D:/Xilinx/Vitis_HLS/2023.1/win64/tools/systemc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="D:/Xilinx/Vitis_HLS/2023.1/win64/tools/auto_cc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="D:/BaiduNetdiskDownload/GraduationDesign"/>
+                                								
+                                <listOptionValue builtIn="false" value="D:/Xilinx/Vitis_HLS/2023.1/include"/>
+                                							
+                            </option>
+                            							
+                            <option id="gnu.cpp.compiler.option.other.other.867689665" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-Wno-unknown-pragmas -c -fmessage-length=0" valueType="string"/>
+                            							
+                            <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1827948094" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+                            						
+                        </tool>
+                        					
+                    </fileInfo>
+                    					
                     <sourceEntries>
                         						
                         <entry excluding=".apc|.settings|solution1|*.c*|*.C*" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
@@ -259,7 +293,7 @@
                                     									
                                     <listOptionValue builtIn="false" value="D:/Xilinx/Vitis_HLS/2023.1/win64/tools/auto_cc/include"/>
                                     									
-                                    <listOptionValue builtIn="false" value="D:/BaiduNetdiskDownload/lab3_student"/>
+                                    <listOptionValue builtIn="false" value="D:/BaiduNetdiskDownload/GraduationDesign"/>
                                     									
                                     <listOptionValue builtIn="false" value="D:/Xilinx/Vitis_HLS/2023.1/include"/>
                                     									
@@ -270,6 +304,8 @@
                                     <listOptionValue builtIn="false" value="D:/new"/>
                                     									
                                     <listOptionValue builtIn="false" value="D:/Software/Xilinx/Vivado/2018.3/win64/tools/auto_cc/include"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="D:/BaiduNetdiskDownload/lab3_student"/>
                                     									
                                     <listOptionValue builtIn="false" value="D:/Software/Xilinx/Vivado/2018.3/include/ap_sysc"/>
                                     									
@@ -297,7 +333,7 @@
                                     									
                                     <listOptionValue builtIn="false" value="D:/Xilinx/Vitis_HLS/2023.1/win64/tools/auto_cc/include"/>
                                     									
-                                    <listOptionValue builtIn="false" value="D:/BaiduNetdiskDownload/lab3_student"/>
+                                    <listOptionValue builtIn="false" value="D:/BaiduNetdiskDownload/GraduationDesign"/>
                                     									
                                     <listOptionValue builtIn="false" value="D:/Xilinx/Vitis_HLS/2023.1/include"/>
                                     									
@@ -308,6 +344,8 @@
                                     <listOptionValue builtIn="false" value="D:/new"/>
                                     									
                                     <listOptionValue builtIn="false" value="D:/Software/Xilinx/Vivado/2018.3/win64/tools/auto_cc/include"/>
+                                    									
+                                    <listOptionValue builtIn="false" value="D:/BaiduNetdiskDownload/lab3_student"/>
                                     									
                                     <listOptionValue builtIn="false" value="D:/Software/Xilinx/Vivado/2018.3/include/ap_sysc"/>
                                     									
@@ -369,6 +407,36 @@
                         					
                     </folderInfo>
                     					
+                    <fileInfo id="cdt.managedbuild.config.gnu.exe.release.1346575318.687668296" name="main.cpp" rcbsApplicability="disable" resourcePath="testbench/main.cpp" toolsToInvoke="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.1190559665.329345762">
+                        						
+                        <tool id="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.1190559665.329345762" name="GCC C++ Compiler" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.exe.release.1190559665">
+                            							
+                            <option id="gnu.cpp.compiler.option.preprocessor.def.654917304" name="Defined symbols (-D)" superClass="gnu.cpp.compiler.option.preprocessor.def"/>
+                            							
+                            <option IS_BUILTIN_EMPTY="false" IS_VALUE_EMPTY="false" id="gnu.cpp.compiler.option.include.paths.2010209264" name="Include paths (-I)" superClass="gnu.cpp.compiler.option.include.paths" valueType="includePath">
+                                								
+                                <listOptionValue builtIn="false" value="D:/Xilinx/Vitis_HLS/2023.1/include/ap_sysc"/>
+                                								
+                                <listOptionValue builtIn="false" value="D:/Xilinx/Vitis_HLS/2023.1/include/etc"/>
+                                								
+                                <listOptionValue builtIn="false" value="D:/Xilinx/Vitis_HLS/2023.1/win64/tools/systemc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="D:/Xilinx/Vitis_HLS/2023.1/win64/tools/auto_cc/include"/>
+                                								
+                                <listOptionValue builtIn="false" value="D:/BaiduNetdiskDownload/GraduationDesign"/>
+                                								
+                                <listOptionValue builtIn="false" value="D:/Xilinx/Vitis_HLS/2023.1/include"/>
+                                							
+                            </option>
+                            							
+                            <option id="gnu.cpp.compiler.option.other.other.1206268524" name="Other flags" superClass="gnu.cpp.compiler.option.other.other" value="-Wno-unknown-pragmas -c -fmessage-length=0" valueType="string"/>
+                            							
+                            <inputType id="cdt.managedbuild.tool.gnu.cpp.compiler.input.1133407838" superClass="cdt.managedbuild.tool.gnu.cpp.compiler.input"/>
+                            						
+                        </tool>
+                        					
+                    </fileInfo>
+                    					
                     <sourceEntries>
                         						
                         <entry excluding=".apc|.settings|solution1|*.c*|*.C*" flags="VALUE_WORKSPACE_PATH|RESOLVED" kind="sourcePath" name=""/>
@@ -391,11 +459,13 @@
         	
     </storageModule>
     	
+    <storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
+    	
     <storageModule moduleId="scannerConfiguration">
         		
         <autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
         		
-        <scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.exe.debug.173771842;cdt.managedbuild.config.gnu.exe.debug.173771842.;cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1945591825;cdt.managedbuild.tool.gnu.cpp.compiler.input.1038464580">
+        <scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.exe.debug.173771842;cdt.managedbuild.config.gnu.exe.debug.173771842.;cdt.managedbuild.tool.gnu.c.compiler.exe.debug.1292566094;cdt.managedbuild.tool.gnu.c.compiler.input.2080068378">
             			
             <autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
             		
@@ -413,14 +483,12 @@
             		
         </scannerConfigBuildInfo>
         		
-        <scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.exe.debug.173771842;cdt.managedbuild.config.gnu.exe.debug.173771842.;cdt.managedbuild.tool.gnu.c.compiler.exe.debug.1292566094;cdt.managedbuild.tool.gnu.c.compiler.input.2080068378">
+        <scannerConfigBuildInfo instanceId="cdt.managedbuild.config.gnu.exe.debug.173771842;cdt.managedbuild.config.gnu.exe.debug.173771842.;cdt.managedbuild.tool.gnu.cpp.compiler.exe.debug.1945591825;cdt.managedbuild.tool.gnu.cpp.compiler.input.1038464580">
             			
             <autodiscovery enabled="true" problemReportingEnabled="true" selectedProfileId=""/>
             		
         </scannerConfigBuildInfo>
         	
     </storageModule>
-    	
-    <storageModule moduleId="org.eclipse.cdt.core.LanguageSettingsProviders"/>
     
 </cproject>

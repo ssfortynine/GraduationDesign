@@ -11,7 +11,7 @@ add_files lstm_hls/rnn.h
 add_files lstm_hls/rnn_top.cpp
 add_files lstm_hls/utils.h
 add_files lstm_hls/weight.h
-add_files -tb lstm_hls/main.cpp
+add_files -tb lstm_hls/main.cpp -cflags "-Wno-unknown-pragmas"
 open_solution "solution1" -flow_target vivado
 set_part {xczu5eg-sfvc784-1-e}
 create_clock -period 10 -name default
