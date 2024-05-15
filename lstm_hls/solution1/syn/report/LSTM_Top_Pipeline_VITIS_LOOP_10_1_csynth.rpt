@@ -1,0 +1,148 @@
+
+
+================================================================
+== Vitis HLS Report for 'LSTM_Top_Pipeline_VITIS_LOOP_10_1'
+================================================================
+* Date:           Wed May 15 15:49:40 2024
+
+* Version:        2023.1 (Build 3854077 on May  4 2023)
+* Project:        lstm_hls
+* Solution:       solution1 (Vivado IP Flow Target)
+* Product family: zynquplus
+* Target device:  xczu5eg-sfvc784-1-e
+
+
+================================================================
+== Performance Estimates
+================================================================
++ Timing: 
+    * Summary: 
+    +--------+----------+----------+------------+
+    |  Clock |  Target  | Estimated| Uncertainty|
+    +--------+----------+----------+------------+
+    |ap_clk  |  10.00 ns|  2.249 ns|     2.70 ns|
+    +--------+----------+----------+------------+
+
++ Latency: 
+    * Summary: 
+    +---------+---------+----------+----------+-----+-----+---------+
+    |  Latency (cycles) |  Latency (absolute) |  Interval | Pipeline|
+    |   min   |   max   |    min   |    max   | min | max |   Type  |
+    +---------+---------+----------+----------+-----+-----+---------+
+    |      102|      102|  1.020 us|  1.020 us|  102|  102|       no|
+    +---------+---------+----------+----------+-----+-----+---------+
+
+    + Detail: 
+        * Instance: 
+        N/A
+
+        * Loop: 
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |                   |  Latency (cycles) | Iteration|  Initiation Interval  | Trip |          |
+        |     Loop Name     |   min   |   max   |  Latency |  achieved |   target  | Count| Pipelined|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+        |- VITIS_LOOP_10_1  |      100|      100|         1|          1|          1|   100|       yes|
+        +-------------------+---------+---------+----------+-----------+-----------+------+----------+
+
+
+
+================================================================
+== Utilization Estimates
+================================================================
+* Summary: 
++-----------------+---------+------+--------+--------+-----+
+|       Name      | BRAM_18K|  DSP |   FF   |   LUT  | URAM|
++-----------------+---------+------+--------+--------+-----+
+|DSP              |        -|     -|       -|       -|    -|
+|Expression       |        -|     -|       0|      32|    -|
+|FIFO             |        -|     -|       -|       -|    -|
+|Instance         |        -|     -|       -|       -|    -|
+|Memory           |        -|     -|       -|       -|    -|
+|Multiplexer      |        -|     -|       -|      36|    -|
+|Register         |        -|     -|       9|       -|    -|
++-----------------+---------+------+--------+--------+-----+
+|Total            |        0|     0|       9|      68|    0|
++-----------------+---------+------+--------+--------+-----+
+|Available        |      288|  1248|  234240|  117120|   64|
++-----------------+---------+------+--------+--------+-----+
+|Utilization (%)  |        0|     0|      ~0|      ~0|    0|
++-----------------+---------+------+--------+--------+-----+
+
++ Detail: 
+    * Instance: 
+    N/A
+
+    * DSP: 
+    N/A
+
+    * Memory: 
+    N/A
+
+    * FIFO: 
+    N/A
+
+    * Expression: 
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |           Variable Name          | Operation| DSP| FF| LUT| Bitwidth P0| Bitwidth P1|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |add_ln10_fu_103_p2                |         +|   0|  0|  14|           7|           1|
+    |ap_condition_121                  |       and|   0|  0|   2|           1|           1|
+    |icmp_ln10_fu_97_p2                |      icmp|   0|  0|  14|           7|           6|
+    |ap_block_state1_pp0_stage0_iter0  |        or|   0|  0|   2|           1|           1|
+    +----------------------------------+----------+----+---+----+------------+------------+
+    |Total                             |          |   0|  0|  32|          16|           9|
+    +----------------------------------+----------+----+---+----+------------+------------+
+
+    * Multiplexer: 
+    +-----------------------+----+-----------+-----+-----------+
+    |          Name         | LUT| Input Size| Bits| Total Bits|
+    +-----------------------+----+-----------+-----+-----------+
+    |ap_done_int            |   9|          2|    1|          2|
+    |ap_sig_allocacmp_i_11  |   9|          2|    7|         14|
+    |i_fu_54                |   9|          2|    7|         14|
+    |in_r_TDATA_blk_n       |   9|          2|    1|          2|
+    +-----------------------+----+-----------+-----+-----------+
+    |Total                  |  36|          8|   16|         32|
+    +-----------------------+----+-----------+-----+-----------+
+
+    * Register: 
+    +-------------+---+----+-----+-----------+
+    |     Name    | FF| LUT| Bits| Const Bits|
+    +-------------+---+----+-----+-----------+
+    |ap_CS_fsm    |  1|   0|    1|          0|
+    |ap_done_reg  |  1|   0|    1|          0|
+    |i_fu_54      |  7|   0|    7|          0|
+    +-------------+---+----+-----+-----------+
+    |Total        |  9|   0|    9|          0|
+    +-------------+---+----+-----+-----------+
+
+
+
+================================================================
+== Interface
+================================================================
+* Summary: 
++-----------------+-----+-----+------------+-----------------------------------+--------------+
+|    RTL Ports    | Dir | Bits|  Protocol  |           Source Object           |    C Type    |
++-----------------+-----+-----+------------+-----------------------------------+--------------+
+|ap_clk           |   in|    1|  ap_ctrl_hs|  LSTM_Top_Pipeline_VITIS_LOOP_10_1|  return value|
+|ap_rst           |   in|    1|  ap_ctrl_hs|  LSTM_Top_Pipeline_VITIS_LOOP_10_1|  return value|
+|ap_start         |   in|    1|  ap_ctrl_hs|  LSTM_Top_Pipeline_VITIS_LOOP_10_1|  return value|
+|ap_done          |  out|    1|  ap_ctrl_hs|  LSTM_Top_Pipeline_VITIS_LOOP_10_1|  return value|
+|ap_idle          |  out|    1|  ap_ctrl_hs|  LSTM_Top_Pipeline_VITIS_LOOP_10_1|  return value|
+|ap_ready         |  out|    1|  ap_ctrl_hs|  LSTM_Top_Pipeline_VITIS_LOOP_10_1|  return value|
+|in_r_TVALID      |   in|    1|        axis|                      in_r_V_data_V|       pointer|
+|in_r_TDATA       |   in|   32|        axis|                      in_r_V_data_V|       pointer|
+|in_r_TREADY      |  out|    1|        axis|                      in_r_V_dest_V|       pointer|
+|in_r_TDEST       |   in|    1|        axis|                      in_r_V_dest_V|       pointer|
+|in_r_TKEEP       |   in|    4|        axis|                      in_r_V_keep_V|       pointer|
+|in_r_TSTRB       |   in|    4|        axis|                      in_r_V_strb_V|       pointer|
+|in_r_TUSER       |   in|    1|        axis|                      in_r_V_user_V|       pointer|
+|in_r_TLAST       |   in|    1|        axis|                      in_r_V_last_V|       pointer|
+|in_r_TID         |   in|    1|        axis|                        in_r_V_id_V|       pointer|
+|buf_in_address0  |  out|    7|   ap_memory|                             buf_in|         array|
+|buf_in_ce0       |  out|    1|   ap_memory|                             buf_in|         array|
+|buf_in_we0       |  out|    1|   ap_memory|                             buf_in|         array|
+|buf_in_d0        |  out|   32|   ap_memory|                             buf_in|         array|
++-----------------+-----+-----+------------+-----------------------------------+--------------+
+

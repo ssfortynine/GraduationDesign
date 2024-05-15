@@ -19,7 +19,7 @@ def decode_idx3_ubyte(idx3_ubyte_file):
     fmt_image = '>' + str(image_size) + 'B'  #图像的像素值以字节方式存放，对应的format格式为B。这里需加上图像大小784来读取784个B格式数据，否则只会读取一个像素的数据
 #     print(fmt_image,offset,struct.calcsize(fmt_image))
 #     images = np.empty((num_images, num_rows * num_cols), dtype = float)
-    images = allocate(shape = (num_images, num_rows * num_cols), dtype = np.float32)
+    images = allocate(shape=(num_images, num_rows * num_cols), dtype=np.float32)
     #plt.figure()
     for i in range(num_images):
         images[i] = struct.unpack_from(fmt_image, bin_data, offset)

@@ -3,6 +3,7 @@
 #include <cmath>
 #include <string.h>
 #include "rnn.h"
+#include "utils.h"
 
 typedef unsigned char byte;
 
@@ -16,14 +17,15 @@ int img_num = -1;
 float* buf = nullptr;		// 图片缓存
 byte* label = nullptr;		// 标签缓存
 
+
 int mnist_app_set(const char* data_path, const char* label_path);
 float mnist_app_test_all();
 void mnist_app_end();
 
 int main()
 {
-    int t = mnist_app_set("../../../../lstm_app/data/t10k-images.idx3-ubyte",
-    						"../../../../lstm_app/data/t10k-labels.idx1-ubyte");
+    int t = mnist_app_set("D:/BaiduNetdiskDownload/GraduationDesign/lstm_hls/lstm/data/t10k-images.idx3-ubyte",
+    						"D:/BaiduNetdiskDownload/GraduationDesign/lstm_hls/lstm/data/t10k-labels.idx1-ubyte");
     if (t == -1) return 0;
 
     printf("Testing all images...\n");
@@ -102,7 +104,6 @@ inline int mnist_app_get_label(int indx)
 {
 	return (int)label[indx];
 }
-
 float mnist_app_test_all()
 {
 	int match_num = 0;
@@ -110,18 +111,34 @@ float mnist_app_test_all()
 	fseek(data_fp, 16, SEEK_SET);
 	byte* tmp = new byte[img_row * img_col];
 	float res_vec[10];
+	hls::stream<stream_t> in("in");
+	hls::stream<stream_t> out("out");
 	for (int i = 0; i < img_num; i++)
 	{
+
 		// 读取一张图片
 		fread(tmp, sizeof(byte), img_row * img_col, data_fp);
-
-		// 对图片像素值进行归一化
+//
+//		// 对图片像素值进行归一化
 		normalize(buf, tmp, img_row * img_col, 255);
-
-		int net_output = infer(buf);
-		if (net_output == mnist_app_get_label(i)) match_num++;
+//
+//
+//		int net_output = infer(buf);
+//#pragma HLS PIPELINE II=1
+		in.write(push_stream <float, 1, 1, 1> (buf,true));
+		LSTM_Top (in, out);
+		while(!out.empty()){
+//#pragma HLS PIPELINE II=1
+			if ((pop_stream <int, 1, 1, 1> (out.read())) == mnist_app_get_label(i)) match_num++;
+		}
 	}
-
+//	LSTM_Top (in, out);
+//	for (int i = 0; i < img_num; i++)
+//	{
+//		while(!out.empty()){
+//		if ((pop_stream <float, 1, 1, 1> (out.read())) == mnist_app_get_label(i)) match_num++;
+//		}
+//	}
 	delete tmp;
 	return (float)match_num / img_num;
 }

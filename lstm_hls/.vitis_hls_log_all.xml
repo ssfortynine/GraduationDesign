@@ -2,23 +2,27 @@
 <vivadoHLSLog:LogRoot xmlns:vivadoHLSLog="www.xilinx.com/vivadoHLSLog">
   <errorLogs>
     <logs>
-      <synLog>
-        <logs message="ERROR: [HLS 200-1715] Encountered problem during source synthesis" projectName="lstm_hls" solutionName="solution1" date="2024-04-21T15:02:16.203+0800"/>
-        <logs message="ERROR: [HLS 214-244] in function 'void mnist_lstm&lt;float, 1, 1, 1>(hls::axis&lt;ap_uint&lt;32>, 1ul, 1ul, 1ul>*, hls::axis&lt;ap_uint&lt;32>, 1ul, 1ul, 1ul>*)': Failed to implement stream interface on variable 'in'. Each array element of 'in' must: (a) be accessed only once, (b) read or write the whole array element in one operation and (c) be accessed in sequential order. (lstm_hls/utils.h:32:32)&#xD;&#xA;Resolution: For help on HLS 214-244 see www.xilinx.com/cgi-bin/docs/rdoc?v=2023.1;t=hls+guidance;d=214-244.html" projectName="lstm_hls" solutionName="solution1" date="2024-04-21T15:02:16.190+0800"/>
-      </synLog>
-      <simLog/>
-      <mgLog/>
+      <synLog/>
       <packageLog/>
-      <csimLog/>
     </logs>
   </errorLogs>
   <warningLogs>
     <logs>
-      <synLog/>
-      <simLog/>
-      <mgLog/>
-      <packageLog/>
-      <csimLog/>
+      <synLog>
+        <logs message="WARNING: [RTGEN 206-101] Design contains AXI ports. Reset is fixed to synchronous and active low." projectName="lstm_hls" solutionName="solution1" date="2024-05-15T15:49:47.911+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-2049] Adding the rewind optimization to the pipelined process 'VITIS_LOOP_45_1' with inout ports inside a dataflow region can result in the creation of loop-carried dependencies and errors. Use caution when adding the rewind optimization to such loops." projectName="lstm_hls" solutionName="solution1" date="2024-05-15T15:49:45.796+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-880] The II Violation in module 'infer_Pipeline_VITIS_LOOP_193_15' (loop 'VITIS_LOOP_193_15'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 0) between 'store' operation ('add21239_write_ln193', lstm_hls/rnn.cpp:193) of variable 'add', lstm_hls/rnn.cpp:193 on local variable 'add21239' and 'load' operation ('add21239_load', lstm_hls/rnn.cpp:193) on local variable 'add21239'.&#xD;&#xA;Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2023.1;t=hls+guidance;d=200-880.html" projectName="lstm_hls" solutionName="solution1" date="2024-05-15T15:49:38.588+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-880] The II Violation in module 'infer_Pipeline_VITIS_LOOP_193_15' (loop 'VITIS_LOOP_193_15'): Unable to enforce a carried dependence constraint (II = 2, distance = 1, offset = 0) between 'store' operation ('add21239_write_ln193', lstm_hls/rnn.cpp:193) of variable 'add', lstm_hls/rnn.cpp:193 on local variable 'add21239' and 'load' operation ('add21239_load', lstm_hls/rnn.cpp:193) on local variable 'add21239'.&#xD;&#xA;Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2023.1;t=hls+guidance;d=200-880.html" projectName="lstm_hls" solutionName="solution1" date="2024-05-15T15:49:38.567+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-880] The II Violation in module 'infer_Pipeline_VITIS_LOOP_193_15' (loop 'VITIS_LOOP_193_15'): Unable to enforce a carried dependence constraint (II = 1, distance = 1, offset = 0) between 'store' operation ('add21239_write_ln193', lstm_hls/rnn.cpp:193) of variable 'add', lstm_hls/rnn.cpp:193 on local variable 'add21239' and 'load' operation ('add21239_load', lstm_hls/rnn.cpp:193) on local variable 'add21239'.&#xD;&#xA;Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2023.1;t=hls+guidance;d=200-880.html" projectName="lstm_hls" solutionName="solution1" date="2024-05-15T15:49:38.552+0800" type="Warning"/>
+        <logs message="WARNING: [HLS 200-880] The II Violation in module 'infer_Pipeline_VITIS_LOOP_156_10_VITIS_LOOP_158_11' (loop 'VITIS_LOOP_156_10_VITIS_LOOP_158_11'): Unable to enforce a carried dependence constraint (II = 3, distance = 1, offset = 0) between 'store' operation ('add1451933_write_ln159', lstm_hls/rnn.cpp:159) of variable 'add8', lstm_hls/rnn.cpp:159 on local variable 'add1451933' and 'load' operation ('add1451933_load', lstm_hls/rnn.cpp:156) on local variable 'add1451933'.&#xD;&#xA;Resolution: For help on HLS 200-880 see www.xilinx.com/cgi-bin/docs/rdoc?v=2023.1;t=hls+guidance;d=200-880.html" projectName="lstm_hls" solutionName="solution1" date="2024-05-15T15:49:33.058+0800" type="Warning"/>
+      </synLog>
+      <packageLog>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'LSTM_Top_fmul_32ns_32ns_32_4_max_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.&#xD;" projectName="lstm_hls" solutionName="solution1" date="2024-05-15T15:50:31.053+0800" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'LSTM_Top_fexp_32ns_32ns_32_8_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.&#xD;" projectName="lstm_hls" solutionName="solution1" date="2024-05-15T15:50:31.041+0800" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'LSTM_Top_fdiv_32ns_32ns_32_10_no_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.&#xD;" projectName="lstm_hls" solutionName="solution1" date="2024-05-15T15:50:31.028+0800" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'LSTM_Top_faddfsub_32ns_32ns_32_5_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.&#xD;" projectName="lstm_hls" solutionName="solution1" date="2024-05-15T15:50:29.046+0800" type="Warning"/>
+        <logs message="WARNING: [IP_Flow 19-4832] The IP name 'LSTM_Top_fadd_32ns_32ns_32_5_full_dsp_1_ip' you have specified is long. The Windows operating system has path length limitations. It is recommended you use shorter names to reduce the likelihood of issues.&#xD;" projectName="lstm_hls" solutionName="solution1" date="2024-05-15T15:50:29.034+0800" type="Warning"/>
+      </packageLog>
     </logs>
   </warningLogs>
 </vivadoHLSLog:LogRoot>

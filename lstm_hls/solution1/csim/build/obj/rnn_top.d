@@ -1,4 +1,5 @@
-obj/rnn_top.o: ../../../rnn_top.cpp ../../../utils.h \
+obj/rnn_top.o: ../../../rnn_top.cpp ../../../rnn.h \
+ D:/Xilinx/Vitis_HLS/2023.1/include/hls_stream.h ../../../utils.h \
  D:/Xilinx/Vitis_HLS/2023.1/include/ap_axi_sdata.h \
  D:/Xilinx/Vitis_HLS/2023.1/include/ap_int.h \
  D:/Xilinx/Vitis_HLS/2023.1/include/etc/ap_common.h \
@@ -20,4 +21,4 @@ obj/rnn_top.o: ../../../rnn_top.cpp ../../../utils.h \
  D:/Xilinx/Vitis_HLS/2023.1/include/etc/ap_fixed_base.h \
  D:/Xilinx/Vitis_HLS/2023.1/include/ap_int.h \
  D:/Xilinx/Vitis_HLS/2023.1/include/etc/ap_fixed_ref.h \
- D:/Xilinx/Vitis_HLS/2023.1/include/etc/ap_fixed_special.h ../../../rnn.h
+ D:/Xilinx/Vitis_HLS/2023.1/include/etc/ap_fixed_special.h

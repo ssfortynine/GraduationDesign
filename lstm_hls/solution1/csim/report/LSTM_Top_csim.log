@@ -1,11 +1,43 @@
 INFO: [SIM 2] *************** CSIM start ***************
 INFO: [SIM 4] CSIM will launch GCC as the compiler.
    Compiling ../../../main.cpp in debug mode
-   Compiling ../../../rnn.cpp in debug mode
-   Compiling ../../../rnn_top.cpp in debug mode
-   Generating csim.exe
-Testing all images...
-72.032s usded, acc = 0.987700
-Test done.
-INFO: [SIM 1] CSim done with 0 errors.
+csim.mk:78: recipe for target 'obj/main.o' failed
+In file included from D:/Xilinx/Vitis_HLS/2023.1/include/floating_point_v7_1_bitacc_cmodel.h:149:0,
+                 from D:/Xilinx/Vitis_HLS/2023.1/include/hls_fpo.h:143,
+                 from D:/Xilinx/Vitis_HLS/2023.1/include/etc/hls_half_fpo.h:18,
+                 from D:/Xilinx/Vitis_HLS/2023.1/include/hls_half.h:25,
+                 from D:/Xilinx/Vitis_HLS/2023.1/include/etc/ap_private.h:52,
+                 from D:/Xilinx/Vitis_HLS/2023.1/include/etc/ap_common.h:666,
+                 from D:/Xilinx/Vitis_HLS/2023.1/include/ap_int.h:10,
+                 from ../../../rnn.h:11,
+                 from ../../../main.cpp:5:
+D:/Xilinx/Vitis_HLS/2023.1/include/gmp.h:58:0: warning: "__GMP_LIBGMP_DLL" redefined
+ #define __GMP_LIBGMP_DLL  0
+ 
+In file included from D:/Xilinx/Vitis_HLS/2023.1/include/hls_fpo.h:143:0,
+                 from D:/Xilinx/Vitis_HLS/2023.1/include/etc/hls_half_fpo.h:18,
+                 from D:/Xilinx/Vitis_HLS/2023.1/include/hls_half.h:25,
+                 from D:/Xilinx/Vitis_HLS/2023.1/include/etc/ap_private.h:52,
+                 from D:/Xilinx/Vitis_HLS/2023.1/include/etc/ap_common.h:666,
+                 from D:/Xilinx/Vitis_HLS/2023.1/include/ap_int.h:10,
+                 from ../../../rnn.h:11,
+                 from ../../../main.cpp:5:
+D:/Xilinx/Vitis_HLS/2023.1/include/floating_point_v7_1_bitacc_cmodel.h:141:0: note: this is the location of the previous definition
+ #define __GMP_LIBGMP_DLL 1
+ 
+../../../main.cpp: In function 'float mnist_app_test_all()':
+../../../main.cpp:128:50: error: no matching function for call to 'push_stream(float*&, bool)'
+   in.write(push_stream <float, 1, 1, 1> (buf,true));
+                                                  ^
+In file included from ../../../rnn.h:12:0,
+                 from ../../../main.cpp:5:
+../../../utils.h:38:34: note: candidate: template<class T, int U, int TI, int TD> ap_axiu<(sizeof (T) * 8), U, TI, TD> push_stream(const T&, bool)
+ ap_axiu <sizeof(T)*8, U, TI, TD> push_stream(T const &v, bool last = false)
+                                  ^~~~~~~~~~~
+../../../utils.h:38:34: note:   template argument deduction/substitution failed:
+../../../main.cpp:128:50: note:   cannot convert 'buf' (type 'float*') to type 'const float&'
+   in.write(push_stream <float, 1, 1, 1> (buf,true));
+                                                  ^
+make: *** [obj/main.o] Error 1
+ERR: [SIM 100] 'csim_design' failed: compilation error(s).
 INFO: [SIM 3] *************** CSIM finish ***************

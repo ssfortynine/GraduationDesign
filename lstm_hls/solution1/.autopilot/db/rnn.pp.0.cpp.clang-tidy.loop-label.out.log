@@ -1,95 +1,120 @@
-D:\BaiduNetdiskDownload\lab3_student\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:36778:2: warning: Added loop label VITIS_LOOP_22_1:   [xilinx-label-all-loops]
+D:\BaiduNetdiskDownload\GraduationDesign\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:29105:7: warning: Added loop label VITIS_LOOP_1213_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1213_1: 
+D:\BaiduNetdiskDownload\GraduationDesign\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:29105:7: note: FIX-IT applied suggested code changes
+D:\BaiduNetdiskDownload\GraduationDesign\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:30079:5: warning: Added loop label VITIS_LOOP_676_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_676_1: 
+D:\BaiduNetdiskDownload\GraduationDesign\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:30079:5: note: FIX-IT applied suggested code changes
+D:\BaiduNetdiskDownload\GraduationDesign\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:30093:5: warning: Added loop label VITIS_LOOP_690_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_690_1: 
+D:\BaiduNetdiskDownload\GraduationDesign\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:30093:5: note: FIX-IT applied suggested code changes
+D:\BaiduNetdiskDownload\GraduationDesign\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:30107:5: warning: Added loop label VITIS_LOOP_704_1:   [xilinx-label-all-loops]
+    for (unsigned i = low; i != high; ++i) {
+    ^~~
+    VITIS_LOOP_704_1: 
+D:\BaiduNetdiskDownload\GraduationDesign\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:30107:5: note: FIX-IT applied suggested code changes
+D:\BaiduNetdiskDownload\GraduationDesign\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:31718:7: warning: Added loop label VITIS_LOOP_1247_1:   [xilinx-label-all-loops]
+      for (i = 0; i < __N - 1; ++i) {
+      ^~~
+      VITIS_LOOP_1247_1: 
+D:\BaiduNetdiskDownload\GraduationDesign\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:31718:7: note: FIX-IT applied suggested code changes
+D:\BaiduNetdiskDownload\GraduationDesign\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:34540:2: warning: Added loop label VITIS_LOOP_22_1:   [xilinx-label-all-loops]
  for (int i = 0; i < size; ++i){
  ^~~
  VITIS_LOOP_22_1: 
-D:\BaiduNetdiskDownload\lab3_student\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:36778:2: note: FIX-IT applied suggested code changes
-D:\BaiduNetdiskDownload\lab3_student\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:36790:2: warning: Added loop label VITIS_LOOP_34_1:   [xilinx-label-all-loops]
+D:\BaiduNetdiskDownload\GraduationDesign\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:34540:2: note: FIX-IT applied suggested code changes
+D:\BaiduNetdiskDownload\GraduationDesign\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:34552:2: warning: Added loop label VITIS_LOOP_34_1:   [xilinx-label-all-loops]
  for (int i = 0; i < size; ++i){
  ^~~
  VITIS_LOOP_34_1: 
-D:\BaiduNetdiskDownload\lab3_student\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:36790:2: note: FIX-IT applied suggested code changes
-D:\BaiduNetdiskDownload\lab3_student\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:36801:2: warning: Added loop label VITIS_LOOP_45_1:   [xilinx-label-all-loops]
+D:\BaiduNetdiskDownload\GraduationDesign\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:34552:2: note: FIX-IT applied suggested code changes
+D:\BaiduNetdiskDownload\GraduationDesign\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:34563:2: warning: Added loop label VITIS_LOOP_45_1:   [xilinx-label-all-loops]
  for (int i = 0; i < size; ++i){
  ^~~
  VITIS_LOOP_45_1: 
-D:\BaiduNetdiskDownload\lab3_student\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:36801:2: note: FIX-IT applied suggested code changes
-D:\BaiduNetdiskDownload\lab3_student\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:36812:2: warning: Added loop label VITIS_LOOP_56_1:   [xilinx-label-all-loops]
+D:\BaiduNetdiskDownload\GraduationDesign\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:34563:2: note: FIX-IT applied suggested code changes
+D:\BaiduNetdiskDownload\GraduationDesign\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:34574:2: warning: Added loop label VITIS_LOOP_56_1:   [xilinx-label-all-loops]
  for (int i = 0; i < size; ++i) {
  ^~~
  VITIS_LOOP_56_1: 
-D:\BaiduNetdiskDownload\lab3_student\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:36812:2: note: FIX-IT applied suggested code changes
-D:\BaiduNetdiskDownload\lab3_student\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:36836:2: warning: Added loop label VITIS_LOOP_80_1:   [xilinx-label-all-loops]
- for (int i = 0; i < 28; i++)
+D:\BaiduNetdiskDownload\GraduationDesign\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:34574:2: note: FIX-IT applied suggested code changes
+D:\BaiduNetdiskDownload\GraduationDesign\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:34598:2: warning: Added loop label VITIS_LOOP_80_1:   [xilinx-label-all-loops]
+ for (int i = 0; i < 5; i++)
  ^~~
  VITIS_LOOP_80_1: 
-D:\BaiduNetdiskDownload\lab3_student\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:36836:2: note: FIX-IT applied suggested code changes
-D:\BaiduNetdiskDownload\lab3_student\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:36839:3: warning: Added loop label VITIS_LOOP_107_2:   [xilinx-label-all-loops]
-  for (int j = 0; j < 28; j++) vec_i[j] = input[i * 28 + j];
+D:\BaiduNetdiskDownload\GraduationDesign\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:34598:2: note: FIX-IT applied suggested code changes
+D:\BaiduNetdiskDownload\GraduationDesign\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:34601:3: warning: Added loop label VITIS_LOOP_107_2:   [xilinx-label-all-loops]
+  for (int j = 0; j < 5; j++) vec_i[j] = input[i * 5 + j];
   ^~~
   VITIS_LOOP_107_2: 
-D:\BaiduNetdiskDownload\lab3_student\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:36839:3: note: FIX-IT applied suggested code changes
-D:\BaiduNetdiskDownload\lab3_student\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:36840:3: warning: Added loop label VITIS_LOOP_108_3:   [xilinx-label-all-loops]
-  for (int j = 0; j < 128; j++) vec_i[28 + j] = h_t[j];
+D:\BaiduNetdiskDownload\GraduationDesign\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:34601:3: note: FIX-IT applied suggested code changes
+D:\BaiduNetdiskDownload\GraduationDesign\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:34602:3: warning: Added loop label VITIS_LOOP_108_3:   [xilinx-label-all-loops]
+  for (int j = 0; j < 128; j++) vec_i[5 + j] = h_t[j];
   ^~~
   VITIS_LOOP_108_3: 
-D:\BaiduNetdiskDownload\lab3_student\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:36840:3: note: FIX-IT applied suggested code changes
-D:\BaiduNetdiskDownload\lab3_student\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:36846:3: warning: Added loop label VITIS_LOOP_114_4:   [xilinx-label-all-loops]
+D:\BaiduNetdiskDownload\GraduationDesign\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:34602:3: note: FIX-IT applied suggested code changes
+D:\BaiduNetdiskDownload\GraduationDesign\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:34608:3: warning: Added loop label VITIS_LOOP_114_4:   [xilinx-label-all-loops]
   for(int i = 0;i < 128;++i){
   ^~~
   VITIS_LOOP_114_4: 
-D:\BaiduNetdiskDownload\lab3_student\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:36846:3: note: FIX-IT applied suggested code changes
-D:\BaiduNetdiskDownload\lab3_student\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:36848:4: warning: Added loop label VITIS_LOOP_116_5:   [xilinx-label-all-loops]
-   for(int j = 0; j < 28 + 128; j++){
+D:\BaiduNetdiskDownload\GraduationDesign\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:34608:3: note: FIX-IT applied suggested code changes
+D:\BaiduNetdiskDownload\GraduationDesign\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:34610:4: warning: Added loop label VITIS_LOOP_116_5:   [xilinx-label-all-loops]
+   for(int j = 0; j < 5 + 128; j++){
    ^~~
    VITIS_LOOP_116_5: 
-D:\BaiduNetdiskDownload\lab3_student\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:36848:4: note: FIX-IT applied suggested code changes
-D:\BaiduNetdiskDownload\lab3_student\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:36860:3: warning: Added loop label VITIS_LOOP_128_6:   [xilinx-label-all-loops]
+D:\BaiduNetdiskDownload\GraduationDesign\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:34610:4: note: FIX-IT applied suggested code changes
+D:\BaiduNetdiskDownload\GraduationDesign\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:34622:3: warning: Added loop label VITIS_LOOP_128_6:   [xilinx-label-all-loops]
   for(int i = 0;i < 128;++i){
   ^~~
   VITIS_LOOP_128_6: 
-D:\BaiduNetdiskDownload\lab3_student\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:36860:3: note: FIX-IT applied suggested code changes
-D:\BaiduNetdiskDownload\lab3_student\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:36862:4: warning: Added loop label VITIS_LOOP_130_7:   [xilinx-label-all-loops]
-   for(int j = 0; j < 28 + 128; j++){
+D:\BaiduNetdiskDownload\GraduationDesign\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:34622:3: note: FIX-IT applied suggested code changes
+D:\BaiduNetdiskDownload\GraduationDesign\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:34624:4: warning: Added loop label VITIS_LOOP_130_7:   [xilinx-label-all-loops]
+   for(int j = 0; j < 5 + 128; j++){
    ^~~
    VITIS_LOOP_130_7: 
-D:\BaiduNetdiskDownload\lab3_student\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:36862:4: note: FIX-IT applied suggested code changes
-D:\BaiduNetdiskDownload\lab3_student\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:36874:3: warning: Added loop label VITIS_LOOP_142_8:   [xilinx-label-all-loops]
+D:\BaiduNetdiskDownload\GraduationDesign\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:34624:4: note: FIX-IT applied suggested code changes
+D:\BaiduNetdiskDownload\GraduationDesign\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:34636:3: warning: Added loop label VITIS_LOOP_142_8:   [xilinx-label-all-loops]
   for(int i = 0;i < 128;++i){
   ^~~
   VITIS_LOOP_142_8: 
-D:\BaiduNetdiskDownload\lab3_student\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:36874:3: note: FIX-IT applied suggested code changes
-D:\BaiduNetdiskDownload\lab3_student\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:36876:4: warning: Added loop label VITIS_LOOP_144_9:   [xilinx-label-all-loops]
-   for(int j = 0; j < 28 + 128; j++){
+D:\BaiduNetdiskDownload\GraduationDesign\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:34636:3: note: FIX-IT applied suggested code changes
+D:\BaiduNetdiskDownload\GraduationDesign\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:34638:4: warning: Added loop label VITIS_LOOP_144_9:   [xilinx-label-all-loops]
+   for(int j = 0; j < 5 + 128; j++){
    ^~~
    VITIS_LOOP_144_9: 
-D:\BaiduNetdiskDownload\lab3_student\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:36876:4: note: FIX-IT applied suggested code changes
-D:\BaiduNetdiskDownload\lab3_student\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:36888:3: warning: Added loop label VITIS_LOOP_156_10:   [xilinx-label-all-loops]
+D:\BaiduNetdiskDownload\GraduationDesign\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:34638:4: note: FIX-IT applied suggested code changes
+D:\BaiduNetdiskDownload\GraduationDesign\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:34650:3: warning: Added loop label VITIS_LOOP_156_10:   [xilinx-label-all-loops]
   for(int i = 0;i < 128;++i){
   ^~~
   VITIS_LOOP_156_10: 
-D:\BaiduNetdiskDownload\lab3_student\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:36888:3: note: FIX-IT applied suggested code changes
-D:\BaiduNetdiskDownload\lab3_student\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:36890:4: warning: Added loop label VITIS_LOOP_158_11:   [xilinx-label-all-loops]
-   for(int j = 0; j < 28 + 128; j++){
+D:\BaiduNetdiskDownload\GraduationDesign\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:34650:3: note: FIX-IT applied suggested code changes
+D:\BaiduNetdiskDownload\GraduationDesign\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:34652:4: warning: Added loop label VITIS_LOOP_158_11:   [xilinx-label-all-loops]
+   for(int j = 0; j < 5 + 128; j++){
    ^~~
    VITIS_LOOP_158_11: 
-D:\BaiduNetdiskDownload\lab3_student\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:36890:4: note: FIX-IT applied suggested code changes
-D:\BaiduNetdiskDownload\lab3_student\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:36902:3: warning: Added loop label VITIS_LOOP_170_12:   [xilinx-label-all-loops]
+D:\BaiduNetdiskDownload\GraduationDesign\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:34652:4: note: FIX-IT applied suggested code changes
+D:\BaiduNetdiskDownload\GraduationDesign\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:34664:3: warning: Added loop label VITIS_LOOP_170_12:   [xilinx-label-all-loops]
   for(int i = 0;i < 128;++i){
   ^~~
   VITIS_LOOP_170_12: 
-D:\BaiduNetdiskDownload\lab3_student\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:36902:3: note: FIX-IT applied suggested code changes
-D:\BaiduNetdiskDownload\lab3_student\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:36913:3: warning: Added loop label VITIS_LOOP_181_13:   [xilinx-label-all-loops]
+D:\BaiduNetdiskDownload\GraduationDesign\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:34664:3: note: FIX-IT applied suggested code changes
+D:\BaiduNetdiskDownload\GraduationDesign\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:34675:3: warning: Added loop label VITIS_LOOP_181_13:   [xilinx-label-all-loops]
   for(int i = 0;i < 128;++i){
   ^~~
   VITIS_LOOP_181_13: 
-D:\BaiduNetdiskDownload\lab3_student\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:36913:3: note: FIX-IT applied suggested code changes
-D:\BaiduNetdiskDownload\lab3_student\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:36925:31: warning: Added loop label VITIS_LOOP_193_14:   [xilinx-label-all-loops]
- { std::fill_n(res, 10, 0.0); for (int r = 0; r < 10; r++) for (int c = 0; c < 128; c++) res[r] += Weight_lc[r][c] * h_t[c]; };
-                              ^~~
-                              VITIS_LOOP_193_14: 
-D:\BaiduNetdiskDownload\lab3_student\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:36925:31: note: FIX-IT applied suggested code changes
-D:\BaiduNetdiskDownload\lab3_student\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:36925:60: warning: Added loop label VITIS_LOOP_193_15:   [xilinx-label-all-loops]
- { std::fill_n(res, 10, 0.0); for (int r = 0; r < 10; r++) for (int c = 0; c < 128; c++) res[r] += Weight_lc[r][c] * h_t[c]; };
-                                                           ^~~
-                                                           VITIS_LOOP_193_15: 
-D:\BaiduNetdiskDownload\lab3_student\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:36925:60: note: FIX-IT applied suggested code changes
+D:\BaiduNetdiskDownload\GraduationDesign\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:34675:3: note: FIX-IT applied suggested code changes
+D:\BaiduNetdiskDownload\GraduationDesign\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:34687:30: warning: Added loop label VITIS_LOOP_193_14:   [xilinx-label-all-loops]
+ { std::fill_n(res, 1, 0.0); for (int r = 0; r < 1; r++) for (int c = 0; c < 128; c++) res[r] += Weight_lc[r][c] * h_t[c]; };
+                             ^~~
+                             VITIS_LOOP_193_14: 
+D:\BaiduNetdiskDownload\GraduationDesign\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:34687:30: note: FIX-IT applied suggested code changes
+D:\BaiduNetdiskDownload\GraduationDesign\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:34687:58: warning: Added loop label VITIS_LOOP_193_15:   [xilinx-label-all-loops]
+ { std::fill_n(res, 1, 0.0); for (int r = 0; r < 1; r++) for (int c = 0; c < 128; c++) res[r] += Weight_lc[r][c] * h_t[c]; };
+                                                         ^~~
+                                                         VITIS_LOOP_193_15: 
+D:\BaiduNetdiskDownload\GraduationDesign\lstm_hls\solution1\.autopilot\db\rnn.pp.0.cpp:34687:58: note: FIX-IT applied suggested code changes

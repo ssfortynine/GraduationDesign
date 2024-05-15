@@ -1,50 +1,147 @@
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: lstm_hls/rnn_top.cpp, Line: 13, Column: 14 }
-Function:        _Z10mnist_lstmIfLi1ELi1ELi1EEvPN3hls4axisI7ap_uintILi32EELm1ELm1ELm1EEES5_
+DebugLoc:        { File: lstm_hls/rnn_top.cpp, Line: 25, Column: 12 }
+Function:        _Z10mnist_lstmIfLi1ELi1ELi1EEvRN3hls6streamINS0_4axisI7ap_uintILi32EELm1ELm1ELm1EEELi0EEES7_
 Args:            
   - String:          'Inlining function '''
-  - Callee:          'float pop_stream<float, 1, 1, 1>(hls::axis<ap_uint<(sizeof (float)) * (8)>, 1, 1, 1> const&)'
-    DebugLoc:        { File: lstm_hls/utils.h, Line: 15, Column: 0 }
+  - Callee:          'hls::axis<ap_uint<(sizeof (float)) * (8)>, 1, 1, 1> push_stream<float, 1, 1, 1>(float const&, bool)'
+    DebugLoc:        { File: lstm_hls/utils.h, Line: 39, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'void mnist_lstm<float, 1, 1, 1>(hls::axis<ap_uint<32>, 1ul, 1ul, 1ul>*, hls::axis<ap_uint<32>, 1ul, 1ul, 1ul>*)'
+  - Caller:          'void mnist_lstm<float, 1, 1, 1>(hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul>, 0>&)'
     DebugLoc:        { File: lstm_hls/rnn_top.cpp, Line: 6, Column: 0 }
   - String:          ''''
 ...
 --- !Passed
 Pass:            inline
 Name:            AlwaysInline
-DebugLoc:        { File: lstm_hls/rnn_top.cpp, Line: 26, Column: 11 }
-Function:        _Z10mnist_lstmIfLi1ELi1ELi1EEvPN3hls4axisI7ap_uintILi32EELm1ELm1ELm1EEES5_
+DebugLoc:        { File: lstm_hls/rnn_top.cpp, Line: 13, Column: 14 }
+Function:        _Z10mnist_lstmIfLi1ELi1ELi1EEvRN3hls6streamINS0_4axisI7ap_uintILi32EELm1ELm1ELm1EEELi0EEES7_
 Args:            
   - String:          'Inlining function '''
-  - Callee:          'hls::axis<ap_uint<(sizeof (float)) * (8)>, 1, 1, 1> push_stream<float, 1, 1, 1>(float const&, bool)'
-    DebugLoc:        { File: lstm_hls/utils.h, Line: 39, Column: 0 }
+  - Callee:          'float pop_stream<float, 1, 1, 1>(hls::axis<ap_uint<(sizeof (float)) * (8)>, 1, 1, 1> const&)'
+    DebugLoc:        { File: lstm_hls/utils.h, Line: 15, Column: 0 }
   - String:          ''' into '''
-  - Caller:          'void mnist_lstm<float, 1, 1, 1>(hls::axis<ap_uint<32>, 1ul, 1ul, 1ul>*, hls::axis<ap_uint<32>, 1ul, 1ul, 1ul>*)'
+  - Caller:          'void mnist_lstm<float, 1, 1, 1>(hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul>, 0>&)'
     DebugLoc:        { File: lstm_hls/rnn_top.cpp, Line: 6, Column: 0 }
   - String:          ''''
 ...
---- !HLSUnsupported
-Pass:            reflow-entirety-access-check
-Name:            NonEntiretyAccessOnArrayToStream
-DebugLoc:        { File: lstm_hls/utils.h, Line: 32, Column: 32 }
-Function:        _Z10mnist_lstmIfLi1ELi1ELi1EEvPN3hls4axisI7ap_uintILi32EELm1ELm1ELm1EEES5_
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2023.1/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\bits/stl_algobase.h', 
+                   Line: 785, Column: 0 }
+Function:        _ZSt6fill_nIPfidET_S1_T0_RKT1_
 Args:            
-  - String:          'in function '''
-  - Function:        'void mnist_lstm<float, 1, 1, 1>(hls::axis<ap_uint<32>, 1ul, 1ul, 1ul>*, hls::axis<ap_uint<32>, 1ul, 1ul, 1ul>*)'
-    DebugLoc:        { File: lstm_hls/rnn_top.cpp, Line: 6, Column: 0 }
-  - String:          ''': '
-  - String:          'Failed to implement stream interface on variable '''
-  - Name:            in
-  - String:          '''. Each array element of '''
-  - Name:            in
-  - String:          ''' must: (a) be accessed only once, (b) read or write the whole array element in one operation and (c) be accessed in sequential order.'
+  - String:          'Inlining function '''
+  - Callee:          'float* std::__niter_base<float*>(float*)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2023.1/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\bits/stl_algobase.h', 
+                       Line: 278, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'float* std::fill_n<float*, int, double>(float*, int, double const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2023.1/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\bits/stl_algobase.h', 
+                       Line: 785, Column: 0 }
+  - String:          ''''
 ...
---- !HLSReportFatalError
-Pass:            reflow-entirety-access-check
-Name:            HLSFatalError
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2023.1/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\bits/stl_algobase.h', 
+                   Line: 785, Column: 0 }
+Function:        _ZSt6fill_nIPfidET_S1_T0_RKT1_
 Args:            
-  - Msg:             Fail to Synthesize.
+  - String:          'Inlining function '''
+  - Callee:          '__gnu_cxx::__enable_if<__is_scalar<double>::__value, float*>::__type std::__fill_n_a<float*, int, double>(float*, int, double const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2023.1/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\bits/stl_algobase.h', 
+                       Line: 750, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'float* std::fill_n<float*, int, double>(float*, int, double const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2023.1/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\bits/stl_algobase.h', 
+                       Line: 785, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: lstm_hls/rnn.cpp, Line: 67, Column: 0 }
+Function:        _Z5inferPfS_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'sigmoid(float*, float*, int)'
+    DebugLoc:        { File: lstm_hls/rnn.cpp, Line: 18, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'infer(float*, float*)'
+    DebugLoc:        { File: lstm_hls/rnn.cpp, Line: 67, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: lstm_hls/rnn.cpp, Line: 67, Column: 0 }
+Function:        _Z5inferPfS_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'tanh(float*, float*, int)'
+    DebugLoc:        { File: lstm_hls/rnn.cpp, Line: 30, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'infer(float*, float*)'
+    DebugLoc:        { File: lstm_hls/rnn.cpp, Line: 67, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: lstm_hls/rnn.cpp, Line: 67, Column: 0 }
+Function:        _Z5inferPfS_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'hprod(float*, float*, float*, int)'
+    DebugLoc:        { File: lstm_hls/rnn.cpp, Line: 52, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'infer(float*, float*)'
+    DebugLoc:        { File: lstm_hls/rnn.cpp, Line: 67, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: lstm_hls/rnn.cpp, Line: 67, Column: 0 }
+Function:        _Z5inferPfS_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'geva(float*, float*, int)'
+    DebugLoc:        { File: lstm_hls/rnn.cpp, Line: 41, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'infer(float*, float*)'
+    DebugLoc:        { File: lstm_hls/rnn.cpp, Line: 67, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: lstm_hls/rnn.cpp, Line: 67, Column: 0 }
+Function:        _Z5inferPfS_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'float* std::fill_n<float*, int, double>(float*, int, double const&)'
+    DebugLoc:        { File: 'D:/Xilinx/Vitis_HLS/2023.1/tps/mingw/8.3.0/win64.o/nt\lib\gcc\x86_64-w64-mingw32\8.3.0\include\c++\bits/stl_algobase.h', 
+                       Line: 785, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'infer(float*, float*)'
+    DebugLoc:        { File: lstm_hls/rnn.cpp, Line: 67, Column: 0 }
+  - String:          ''''
+...
+--- !Passed
+Pass:            reflow-inliner
+Name:            AutoInline
+DebugLoc:        { File: lstm_hls/rnn_top.cpp, Line: 33, Column: 0 }
+Function:        _Z8LSTM_TopRN3hls6streamINS_4axisI7ap_uintILi32EELm1ELm1ELm1EEELi0EEES6_
+Args:            
+  - String:          'Inlining function '''
+  - Callee:          'void mnist_lstm<float, 1, 1, 1>(hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul>, 0>&)'
+    DebugLoc:        { File: lstm_hls/rnn_top.cpp, Line: 6, Column: 0 }
+  - String:          ''' into '''
+  - Caller:          'LSTM_Top(hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul>, 0>&, hls::stream<hls::axis<ap_uint<32>, 1ul, 1ul, 1ul>, 0>&)'
+    DebugLoc:        { File: lstm_hls/rnn_top.cpp, Line: 33, Column: 0 }
+  - String:          ''''
 ...

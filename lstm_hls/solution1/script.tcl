@@ -15,8 +15,10 @@ add_files -tb lstm_hls/main.cpp -cflags "-Wno-unknown-pragmas"
 open_solution "solution1" -flow_target vivado
 set_part {xczu5eg-sfvc784-1-e}
 create_clock -period 10 -name default
+config_cosim -tool xsim -trace_level port -wave_debug
+config_export -format ip_catalog -rtl verilog
 source "./lstm_hls/solution1/directives.tcl"
 csim_design
 csynth_design
-cosim_design
+cosim_design -wave_debug -trace_level port -tool xsim
 export_design -rtl verilog -format ip_catalog

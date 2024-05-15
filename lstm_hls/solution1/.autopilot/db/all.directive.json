@@ -16,7 +16,7 @@
       ]
     },
     "slx": false,
-    "sourceFile": "D:/BaiduNetdiskDownload/lab3_student/lstm_hls/solution1/directives.tcl",
+    "sourceFile": "D:/BaiduNetdiskDownload/GraduationDesign/lstm_hls/solution1/directives.tcl",
     "sourceLine": 7,
     "success": true
   },
@@ -37,8 +37,8 @@
       ]
     },
     "slx": false,
-    "sourceFile": "D:/BaiduNetdiskDownload/lab3_student/lstm_hls/solution1/csynth.tcl",
-    "sourceLine": 19,
+    "sourceFile": "D:/BaiduNetdiskDownload/GraduationDesign/lstm_hls/solution1/csynth.tcl",
+    "sourceLine": 21,
     "success": true
   }
 ]

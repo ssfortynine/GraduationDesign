@@ -1,0 +1,33 @@
+{
+  "0": {
+    "basicblocks": 4,
+    "calls": "1",
+    "file": "rnn_top.cpp",
+    "fileloc": 32,
+    "instructions": 97,
+    "loads": {
+      "L": 8
+    },
+    "name": "LSTM_Top",
+    "stores": {
+      "L": 22
+    },
+    "total_instructions": 492
+  },
+  "1": {
+    "basicblocks": 88,
+    "calls": "",
+    "file": "rnn.cpp",
+    "fileloc": 65,
+    "instructions": 395,
+    "loads": {
+      "G": 9,
+      "L": 20
+    },
+    "name": "infer",
+    "stores": {
+      "L": 29
+    },
+    "total_instructions": 395
+  }
+}

@@ -5,11 +5,6 @@
                 <option name="name" value="LSTM_Top"/>
             </pragma>
         </directive>
-        <directive functionName="LSTM_Top" label="" functionLabel="">
-            <pragma name="TOP">
-                <option name="name" value="LSTM_Top"/>
-            </pragma>
-        </directive>
     </sourceFile>
 </AutoPilot:ProjectResources>
 

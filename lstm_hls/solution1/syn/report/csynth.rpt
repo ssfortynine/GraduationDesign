@@ -1,0 +1,251 @@
+
+
+================================================================
+== Synthesis Summary Report of 'LSTM_Top'
+================================================================
++ General Information: 
+    * Date:           Wed May 15 15:49:48 2024
+    * Version:        2023.1 (Build 3854077 on May  4 2023)
+    * Project:        lstm_hls
+    * Solution:       solution1 (Vivado IP Flow Target)
+    * Product family: zynquplus
+    * Target device:  xczu5eg-sfvc784-1-e
+    
+
++ Performance & Resource Estimates: 
+    
+    PS: '+' for module; 'o' for loop; '*' for dataflow
+    +---------------------------------------------------------+------+------+---------+-----------+----------+---------+-------+----------+-----------+---------+-----------+-----------+-----+
+    |                         Modules                         | Issue|      | Latency |  Latency  | Iteration|         |  Trip |          |           |         |           |           |     |
+    |                         & Loops                         | Type | Slack| (cycles)|    (ns)   |  Latency | Interval| Count | Pipelined|   BRAM    |   DSP   |     FF    |    LUT    | URAM|
+    +---------------------------------------------------------+------+------+---------+-----------+----------+---------+-------+----------+-----------+---------+-----------+-----------+-----+
+    |+ LSTM_Top                                               |     -|  0.59|  1371684|  1.372e+07|         -|  1371685|      -|        no|  159 (55%)|  25 (2%)|  5252 (2%)|  7830 (6%)|    -|
+    | + LSTM_Top_Pipeline_VITIS_LOOP_10_1                     |     -|  5.05|      102|  1.020e+03|         -|      102|      -|        no|          -|        -|    9 (~0%)|   68 (~0%)|    -|
+    |  o VITIS_LOOP_10_1                                      |     -|  7.30|      100|  1.000e+03|         1|        1|    100|       yes|          -|        -|          -|          -|    -|
+    | + infer                                                 |     -|  0.59|  1371577|  1.372e+07|         -|  1371577|      -|        no|  158 (54%)|  25 (2%)|  5235 (2%)|  7668 (6%)|    -|
+    |  + infer_Pipeline_1                                     |     -|  5.04|      130|  1.300e+03|         -|      130|      -|        no|          -|        -|   10 (~0%)|   58 (~0%)|    -|
+    |   o Loop 1                                              |     -|  7.30|      128|  1.280e+03|         1|        1|    128|       yes|          -|        -|          -|          -|    -|
+    |  + infer_Pipeline_2                                     |     -|  5.04|      130|  1.300e+03|         -|      130|      -|        no|          -|        -|   10 (~0%)|   58 (~0%)|    -|
+    |   o Loop 1                                              |     -|  7.30|      128|  1.280e+03|         1|        1|    128|       yes|          -|        -|          -|          -|    -|
+    |  + infer_Pipeline_3                                     |     -|  5.04|      130|  1.300e+03|         -|      130|      -|        no|          -|        -|   10 (~0%)|   58 (~0%)|    -|
+    |   o Loop 1                                              |     -|  7.30|      128|  1.280e+03|         1|        1|    128|       yes|          -|        -|          -|          -|    -|
+    |  + infer_Pipeline_4                                     |     -|  5.04|      130|  1.300e+03|         -|      130|      -|        no|          -|        -|   10 (~0%)|   58 (~0%)|    -|
+    |   o Loop 1                                              |     -|  7.30|      128|  1.280e+03|         1|        1|    128|       yes|          -|        -|          -|          -|    -|
+    |  + infer_Pipeline_5                                     |     -|  5.04|      130|  1.300e+03|         -|      130|      -|        no|          -|        -|   10 (~0%)|   58 (~0%)|    -|
+    |   o Loop 1                                              |     -|  7.30|      128|  1.280e+03|         1|        1|    128|       yes|          -|        -|          -|          -|    -|
+    |  + infer_Pipeline_6                                     |     -|  5.04|      130|  1.300e+03|         -|      130|      -|        no|          -|        -|   10 (~0%)|   58 (~0%)|    -|
+    |   o Loop 1                                              |     -|  7.30|      128|  1.280e+03|         1|        1|    128|       yes|          -|        -|          -|          -|    -|
+    |  + infer_Pipeline_VITIS_LOOP_193_15                     |     -|  0.79|      519|  5.190e+03|         -|      519|      -|        no|    1 (~0%)|        -|   83 (~0%)|  140 (~0%)|    -|
+    |   o VITIS_LOOP_193_15                                   |    II|  7.30|      517|  5.170e+03|        10|        4|    128|       yes|          -|        -|          -|          -|    -|
+    |  o VITIS_LOOP_80_1                                      |     -|  7.30|  1370920|  1.371e+07|    274184|        -|      5|        no|          -|        -|          -|          -|    -|
+    |   + infer_Pipeline_VITIS_LOOP_107_2                     |     -|  4.32|        7|     70.000|         -|        7|      -|        no|          -|        -|    9 (~0%)|   82 (~0%)|    -|
+    |    o VITIS_LOOP_107_2                                   |     -|  7.30|        5|     50.000|         2|        1|      5|       yes|          -|        -|          -|          -|    -|
+    |   + infer_Pipeline_VITIS_LOOP_108_3                     |     -|  4.60|      130|  1.300e+03|         -|      130|      -|        no|          -|        -|   19 (~0%)|   84 (~0%)|    -|
+    |    o VITIS_LOOP_108_3                                   |     -|  7.30|      128|  1.280e+03|         2|        1|    128|       yes|          -|        -|          -|          -|    -|
+    |   + infer_Pipeline_VITIS_LOOP_114_4_VITIS_LOOP_116_5    |     -|  0.76|    68112|  6.811e+05|         -|    68112|      -|        no|   37 (12%)|  1 (~0%)|  464 (~0%)|  439 (~0%)|    -|
+    |    o VITIS_LOOP_114_4_VITIS_LOOP_116_5                  |    II|  7.30|    68110|  6.811e+05|        19|        4|  17024|       yes|          -|        -|          -|          -|    -|
+    |   + infer_Pipeline_VITIS_LOOP_22_1                      |     -|  0.59|      154|  1.540e+03|         -|      154|      -|        no|          -|        -|  259 (~0%)|  134 (~0%)|    -|
+    |    o VITIS_LOOP_22_1                                    |     -|  7.30|      152|  1.520e+03|        26|        1|    128|       yes|          -|        -|          -|          -|    -|
+    |   + infer_Pipeline_VITIS_LOOP_128_6_VITIS_LOOP_130_7    |     -|  0.76|    68112|  6.811e+05|         -|    68112|      -|        no|   37 (12%)|  1 (~0%)|  464 (~0%)|  439 (~0%)|    -|
+    |    o VITIS_LOOP_128_6_VITIS_LOOP_130_7                  |    II|  7.30|    68110|  6.811e+05|        19|        4|  17024|       yes|          -|        -|          -|          -|    -|
+    |   + infer_Pipeline_VITIS_LOOP_22_11                     |     -|  0.59|      154|  1.540e+03|         -|      154|      -|        no|          -|        -|  259 (~0%)|  134 (~0%)|    -|
+    |    o VITIS_LOOP_22_1                                    |     -|  7.30|      152|  1.520e+03|        26|        1|    128|       yes|          -|        -|          -|          -|    -|
+    |   + infer_Pipeline_VITIS_LOOP_142_8_VITIS_LOOP_144_9    |     -|  0.76|    68112|  6.811e+05|         -|    68112|      -|        no|   37 (12%)|  1 (~0%)|  464 (~0%)|  439 (~0%)|    -|
+    |    o VITIS_LOOP_142_8_VITIS_LOOP_144_9                  |    II|  7.30|    68110|  6.811e+05|        19|        4|  17024|       yes|          -|        -|          -|          -|    -|
+    |   + infer_Pipeline_VITIS_LOOP_34_1                      |     -|  0.59|      154|  1.540e+03|         -|      154|      -|        no|          -|        -|  323 (~0%)|  134 (~0%)|    -|
+    |    o VITIS_LOOP_34_1                                    |     -|  7.30|      152|  1.520e+03|        26|        1|    128|       yes|          -|        -|          -|          -|    -|
+    |   + infer_Pipeline_VITIS_LOOP_156_10_VITIS_LOOP_158_11  |     -|  0.76|    68112|  6.811e+05|         -|    68112|      -|        no|   37 (12%)|  1 (~0%)|  464 (~0%)|  439 (~0%)|    -|
+    |    o VITIS_LOOP_156_10_VITIS_LOOP_158_11                |    II|  7.30|    68110|  6.811e+05|        19|        4|  17024|       yes|          -|        -|          -|          -|    -|
+    |   + infer_Pipeline_VITIS_LOOP_22_12                     |     -|  0.59|      154|  1.540e+03|         -|      154|      -|        no|          -|        -|  259 (~0%)|  134 (~0%)|    -|
+    |    o VITIS_LOOP_22_1                                    |     -|  7.30|      152|  1.520e+03|        26|        1|    128|       yes|          -|        -|          -|          -|    -|
+    |   + infer_Pipeline_VITIS_LOOP_170_12                    |     -|  5.04|      130|  1.300e+03|         -|      130|      -|        no|          -|        -|   10 (~0%)|   58 (~0%)|    -|
+    |    o VITIS_LOOP_170_12                                  |     -|  7.30|      128|  1.280e+03|         1|        1|    128|       yes|          -|        -|          -|          -|    -|
+    |   + infer_Pipeline_VITIS_LOOP_56_1                      |     -|  1.28|      133|  1.330e+03|         -|      133|      -|        no|          -|        -|   89 (~0%)|  101 (~0%)|    -|
+    |    o VITIS_LOOP_56_1                                    |     -|  7.30|      131|  1.310e+03|         5|        1|    128|       yes|          -|        -|          -|          -|    -|
+    |   + infer_Pipeline_VITIS_LOOP_56_13                     |     -|  1.28|      133|  1.330e+03|         -|      133|      -|        no|          -|        -|   89 (~0%)|  101 (~0%)|    -|
+    |    o VITIS_LOOP_56_1                                    |     -|  7.30|      131|  1.310e+03|         5|        1|    128|       yes|          -|        -|          -|          -|    -|
+    |   + infer_Pipeline_VITIS_LOOP_45_1                      |     -|  1.28|      136|  1.360e+03|         -|      136|      -|        no|          -|        -|  190 (~0%)|  101 (~0%)|    -|
+    |    o VITIS_LOOP_45_1                                    |     -|  7.30|      134|  1.340e+03|         8|        1|    128|       yes|          -|        -|          -|          -|    -|
+    |   + infer_Pipeline_VITIS_LOOP_181_13                    |     -|  5.04|      130|  1.300e+03|         -|      130|      -|        no|          -|        -|   10 (~0%)|   58 (~0%)|    -|
+    |    o VITIS_LOOP_181_13                                  |     -|  7.30|      128|  1.280e+03|         1|        1|    128|       yes|          -|        -|          -|          -|    -|
+    |   + infer_Pipeline_VITIS_LOOP_34_14                     |     -|  0.59|      154|  1.540e+03|         -|      154|      -|        no|          -|        -|  323 (~0%)|  134 (~0%)|    -|
+    |    o VITIS_LOOP_34_1                                    |     -|  7.30|      152|  1.520e+03|        26|        1|    128|       yes|          -|        -|          -|          -|    -|
+    |   + infer_Pipeline_VITIS_LOOP_56_15                     |     -|  1.28|      133|  1.330e+03|         -|      133|      -|        no|          -|        -|   89 (~0%)|  101 (~0%)|    -|
+    |    o VITIS_LOOP_56_1                                    |     -|  7.30|      131|  1.310e+03|         5|        1|    128|       yes|          -|        -|          -|          -|    -|
+    +---------------------------------------------------------+------+------+---------+-----------+----------+---------+-------+----------+-----------+---------+-----------+-----------+-----+
+
+
+================================================================
+== HW Interfaces
+================================================================
+* AXIS
++-----------+-----------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
+| Interface | Direction | Register Mode | TDATA | TDEST | TID | TKEEP | TLAST | TREADY | TSTRB | TUSER | TVALID |
++-----------+-----------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
+| in_r      | in        | both          | 32    | 1     | 1   | 4     | 1     | 1      | 4     | 1     | 1      |
+| out_r     | out       | both          | 32    | 1     | 1   | 4     | 1     | 1      | 4     | 1     | 1      |
++-----------+-----------+---------------+-------+-------+-----+-------+-------+--------+-------+-------+--------+
+
+* TOP LEVEL CONTROL
++-----------+--------------+----------+
+| Interface | Type         | Ports    |
++-----------+--------------+----------+
+| ap_clk    | clock        | ap_clk   |
+| ap_rst_n  | reset        | ap_rst_n |
+| ap_ctrl   | ap_ctrl_none |          |
++-----------+--------------+----------+
+
+
+================================================================
+== SW I/O Information
+================================================================
+* Top Function Arguments
++----------+-----------+---------------------------------------------+
+| Argument | Direction | Datatype                                    |
++----------+-----------+---------------------------------------------+
+| in       | in        | stream<hls::axis<ap_uint<32>, 1, 1, 1>, 0>& |
+| out      | out       | stream<hls::axis<ap_uint<32>, 1, 1, 1>, 0>& |
++----------+-----------+---------------------------------------------+
+
+* SW-to-HW Mapping
++----------+--------------+-----------+
+| Argument | HW Interface | HW Type   |
++----------+--------------+-----------+
+| in       | in_r         | interface |
+| out      | out_r        | interface |
++----------+--------------+-----------+
+
+
+================================================================
+== Bind Op Report
+================================================================
++--------------------------------------------------------+-----+--------+--------------------+------+---------+---------+
+| Name                                                   | DSP | Pragma | Variable           | Op   | Impl    | Latency |
++--------------------------------------------------------+-----+--------+--------------------+------+---------+---------+
+| + LSTM_Top                                             | 25  |        |                    |      |         |         |
+|  + LSTM_Top_Pipeline_VITIS_LOOP_10_1                   | 0   |        |                    |      |         |         |
+|    add_ln10_fu_103_p2                                  | -   |        | add_ln10           | add  | fabric  | 0       |
+|  + infer                                               | 25  |        |                    |      |         |         |
+|    add_ln80_fu_318_p2                                  | -   |        | add_ln80           | add  | fabric  | 0       |
+|    faddfsub_32ns_32ns_32_5_full_dsp_1_U101             | 2   |        | res_0_write_assign | fadd | fulldsp | 4       |
+|   + infer_Pipeline_1                                   | 0   |        |                    |      |         |         |
+|     empty_29_fu_58_p2                                  | -   |        | empty_29           | add  | fabric  | 0       |
+|   + infer_Pipeline_2                                   | 0   |        |                    |      |         |         |
+|     empty_28_fu_58_p2                                  | -   |        | empty_28           | add  | fabric  | 0       |
+|   + infer_Pipeline_3                                   | 0   |        |                    |      |         |         |
+|     empty_27_fu_58_p2                                  | -   |        | empty_27           | add  | fabric  | 0       |
+|   + infer_Pipeline_4                                   | 0   |        |                    |      |         |         |
+|     empty_26_fu_58_p2                                  | -   |        | empty_26           | add  | fabric  | 0       |
+|   + infer_Pipeline_5                                   | 0   |        |                    |      |         |         |
+|     empty_25_fu_58_p2                                  | -   |        | empty_25           | add  | fabric  | 0       |
+|   + infer_Pipeline_6                                   | 0   |        |                    |      |         |         |
+|     empty_24_fu_58_p2                                  | -   |        | empty_24           | add  | fabric  | 0       |
+|   + infer_Pipeline_VITIS_LOOP_107_2                    | 0   |        |                    |      |         |         |
+|     add_ln107_1_fu_99_p2                               | -   |        | add_ln107_1        | add  | fabric  | 0       |
+|     add_ln107_2_fu_109_p2                              | -   |        | add_ln107_2        | add  | fabric  | 0       |
+|     add_ln107_fu_119_p2                                | -   |        | add_ln107          | add  | fabric  | 0       |
+|   + infer_Pipeline_VITIS_LOOP_193_15                   | 0   |        |                    |      |         |         |
+|     add_ln193_fu_106_p2                                | -   |        | add_ln193          | add  | fabric  | 0       |
+|   + infer_Pipeline_VITIS_LOOP_108_3                    | 0   |        |                    |      |         |         |
+|     add_ln108_1_fu_77_p2                               | -   |        | add_ln108_1        | add  | fabric  | 0       |
+|     add_ln108_fu_93_p2                                 | -   |        | add_ln108          | add  | fabric  | 0       |
+|   + infer_Pipeline_VITIS_LOOP_114_4_VITIS_LOOP_116_5   | 1   |        |                    |      |         |         |
+|     add_ln114_1_fu_152_p2                              | -   |        | add_ln114_1        | add  | fabric  | 0       |
+|     add_ln114_fu_164_p2                                | -   |        | add_ln114          | add  | fabric  | 0       |
+|     mac_muladd_8ns_8ns_8ns_15_4_1_U23                  | 1   |        | mul_ln117          | mul  | dsp48   | 3       |
+|     mac_muladd_8ns_8ns_8ns_15_4_1_U23                  | 1   |        | add_ln117          | add  | dsp48   | 3       |
+|     add_ln116_fu_201_p2                                | -   |        | add_ln116          | add  | fabric  | 0       |
+|   + infer_Pipeline_VITIS_LOOP_22_1                     | 0   |        |                    |      |         |         |
+|     add_ln22_fu_95_p2                                  | -   |        | add_ln22           | add  | fabric  | 0       |
+|   + infer_Pipeline_VITIS_LOOP_128_6_VITIS_LOOP_130_7   | 1   |        |                    |      |         |         |
+|     add_ln128_1_fu_152_p2                              | -   |        | add_ln128_1        | add  | fabric  | 0       |
+|     add_ln128_fu_164_p2                                | -   |        | add_ln128          | add  | fabric  | 0       |
+|     mac_muladd_8ns_8ns_8ns_15_4_1_U36                  | 1   |        | mul_ln131          | mul  | dsp48   | 3       |
+|     mac_muladd_8ns_8ns_8ns_15_4_1_U36                  | 1   |        | add_ln131          | add  | dsp48   | 3       |
+|     add_ln130_fu_201_p2                                | -   |        | add_ln130          | add  | fabric  | 0       |
+|   + infer_Pipeline_VITIS_LOOP_22_11                    | 0   |        |                    |      |         |         |
+|     add_ln22_fu_95_p2                                  | -   |        | add_ln22           | add  | fabric  | 0       |
+|   + infer_Pipeline_VITIS_LOOP_142_8_VITIS_LOOP_144_9   | 1   |        |                    |      |         |         |
+|     add_ln142_1_fu_152_p2                              | -   |        | add_ln142_1        | add  | fabric  | 0       |
+|     add_ln142_fu_164_p2                                | -   |        | add_ln142          | add  | fabric  | 0       |
+|     mac_muladd_8ns_8ns_8ns_15_4_1_U48                  | 1   |        | mul_ln145          | mul  | dsp48   | 3       |
+|     mac_muladd_8ns_8ns_8ns_15_4_1_U48                  | 1   |        | add_ln145          | add  | dsp48   | 3       |
+|     add_ln144_fu_201_p2                                | -   |        | add_ln144          | add  | fabric  | 0       |
+|   + infer_Pipeline_VITIS_LOOP_34_1                     | 0   |        |                    |      |         |         |
+|     add_ln34_fu_100_p2                                 | -   |        | add_ln34           | add  | fabric  | 0       |
+|   + infer_Pipeline_VITIS_LOOP_156_10_VITIS_LOOP_158_11 | 1   |        |                    |      |         |         |
+|     add_ln156_1_fu_152_p2                              | -   |        | add_ln156_1        | add  | fabric  | 0       |
+|     add_ln156_fu_164_p2                                | -   |        | add_ln156          | add  | fabric  | 0       |
+|     mac_muladd_8ns_8ns_8ns_15_4_1_U62                  | 1   |        | mul_ln159          | mul  | dsp48   | 3       |
+|     mac_muladd_8ns_8ns_8ns_15_4_1_U62                  | 1   |        | add_ln159          | add  | dsp48   | 3       |
+|     add_ln158_fu_201_p2                                | -   |        | add_ln158          | add  | fabric  | 0       |
+|   + infer_Pipeline_VITIS_LOOP_22_12                    | 0   |        |                    |      |         |         |
+|     add_ln22_fu_95_p2                                  | -   |        | add_ln22           | add  | fabric  | 0       |
+|   + infer_Pipeline_VITIS_LOOP_170_12                   | 0   |        |                    |      |         |         |
+|     add_ln170_fu_62_p2                                 | -   |        | add_ln170          | add  | fabric  | 0       |
+|   + infer_Pipeline_VITIS_LOOP_56_1                     | 0   |        |                    |      |         |         |
+|     add_ln56_fu_96_p2                                  | -   |        | add_ln56           | add  | fabric  | 0       |
+|   + infer_Pipeline_VITIS_LOOP_56_13                    | 0   |        |                    |      |         |         |
+|     add_ln56_fu_96_p2                                  | -   |        | add_ln56           | add  | fabric  | 0       |
+|   + infer_Pipeline_VITIS_LOOP_45_1                     | 0   |        |                    |      |         |         |
+|     add_ln45_fu_82_p2                                  | -   |        | add_ln45           | add  | fabric  | 0       |
+|   + infer_Pipeline_VITIS_LOOP_181_13                   | 0   |        |                    |      |         |         |
+|     add_ln181_fu_62_p2                                 | -   |        | add_ln181          | add  | fabric  | 0       |
+|   + infer_Pipeline_VITIS_LOOP_34_14                    | 0   |        |                    |      |         |         |
+|     add_ln34_fu_100_p2                                 | -   |        | add_ln34           | add  | fabric  | 0       |
+|   + infer_Pipeline_VITIS_LOOP_56_15                    | 0   |        |                    |      |         |         |
+|     add_ln56_fu_96_p2                                  | -   |        | add_ln56           | add  | fabric  | 0       |
++--------------------------------------------------------+-----+--------+--------------------+------+---------+---------+
+
+
+================================================================
+== Bind Storage Report
+================================================================
++--------------------------------------------------------+------+------+--------+-------------+---------+------+---------+
+| Name                                                   | BRAM | URAM | Pragma | Variable    | Storage | Impl | Latency |
++--------------------------------------------------------+------+------+--------+-------------+---------+------+---------+
+| + LSTM_Top                                             | 159  | 0    |        |             |         |      |         |
+|   buf_in_U                                             | 2    | -    |        | buf_in      | ram_1p  | auto | 1       |
+|  + infer                                               | 158  | 0    |        |             |         |      |         |
+|    gate_f_U                                            | 2    | -    |        | gate_f      | ram_1p  | auto | 1       |
+|    gate_i_U                                            | 2    | -    |        | gate_i      | ram_1p  | auto | 1       |
+|    stat_C_U                                            | 2    | -    |        | stat_C      | ram_1p  | auto | 1       |
+|    C_t_U                                               | 2    | -    |        | C_t         | ram_s2p | auto | 1       |
+|    gate_o_U                                            | 2    | -    |        | gate_o      | ram_1p  | auto | 1       |
+|    fexp_32ns_32ns_32_8_full_dsp_1_U104                 | 2    | -    |        | h_t         | ram_1p  | auto | 1       |
+|    vec_i_U                                             | 2    | -    |        | vec_i       | ram_1p  | auto | 1       |
+|    faddfsub_32ns_32ns_32_5_full_dsp_1_U101             | 2    | -    |        | vec_tmp     | ram_1p  | auto | 1       |
+|   + infer_Pipeline_VITIS_LOOP_193_15                   | 1    | 0    |        |             |         |      |         |
+|     Weight_lc_0_U                                      | 1    | -    |        | Weight_lc_0 | rom_1p  | auto | 1       |
+|   + infer_Pipeline_VITIS_LOOP_114_4_VITIS_LOOP_116_5   | 37   | 0    |        |             |         |      |         |
+|     Weight0_f_U                                        | 36   | -    |        | Weight0_f   | rom_1p  | auto | 1       |
+|     Bias0_f_U                                          | 1    | -    |        | Bias0_f     | rom_1p  | auto | 1       |
+|   + infer_Pipeline_VITIS_LOOP_128_6_VITIS_LOOP_130_7   | 37   | 0    |        |             |         |      |         |
+|     Weight0_i_U                                        | 36   | -    |        | Weight0_i   | rom_1p  | auto | 1       |
+|     Bias0_i_U                                          | 1    | -    |        | Bias0_i     | rom_1p  | auto | 1       |
+|   + infer_Pipeline_VITIS_LOOP_142_8_VITIS_LOOP_144_9   | 37   | 0    |        |             |         |      |         |
+|     Weight0_c_U                                        | 36   | -    |        | Weight0_c   | rom_1p  | auto | 1       |
+|     Bias0_c_U                                          | 1    | -    |        | Bias0_c     | rom_1p  | auto | 1       |
+|   + infer_Pipeline_VITIS_LOOP_156_10_VITIS_LOOP_158_11 | 37   | 0    |        |             |         |      |         |
+|     Weight0_o_U                                        | 36   | -    |        | Weight0_o   | rom_1p  | auto | 1       |
+|     Bias0_o_U                                          | 1    | -    |        | Bias0_o     | rom_1p  | auto | 1       |
++--------------------------------------------------------+------+------+--------+-------------+---------+------+---------+
+
+
+================================================================
+== Pragma Report
+================================================================
+* Valid Pragma Syntax
++-----------+--------------------------+---------------------------------------------+
+| Type      | Options                  | Location                                    |
++-----------+--------------------------+---------------------------------------------+
+| pipeline  | II=1                     | lstm_hls/rnn_top.cpp:12 in mnist_lstm       |
+| pipeline  | II=1                     | lstm_hls/rnn_top.cpp:24 in mnist_lstm       |
+| interface | ap_ctrl_none port=return | lstm_hls/rnn_top.cpp:34 in lstm_top, return |
+| interface | axis port=in             | lstm_hls/rnn_top.cpp:35 in lstm_top, in     |
+| interface | axis port=out            | lstm_hls/rnn_top.cpp:36 in lstm_top, out    |
+| inline    |                          | lstm_hls/utils.h:16 in pop_stream           |
+| inline    |                          | lstm_hls/utils.h:40 in push_stream          |
++-----------+--------------------------+---------------------------------------------+
+
+

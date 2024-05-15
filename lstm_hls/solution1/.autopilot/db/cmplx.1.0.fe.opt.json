@@ -1,14 +1,23 @@
 {
   "0": {
     "basicblocks": 1,
-    "calls": "11",
+    "calls": "8",
     "file": "rnn_top.cpp",
-    "fileloc": 33,
-    "instructions": 5,
+    "fileloc": 32,
+    "instructions": 7,
     "name": "LSTM_Top",
-    "total_instructions": 966
+    "total_instructions": 1099
   },
   "1": {
+    "basicblocks": 1,
+    "calls": "",
+    "file": "stl_algobase.h",
+    "fileloc": 277,
+    "instructions": 1,
+    "name": "__niter_base<float *>",
+    "total_instructions": 1
+  },
+  "10": {
     "basicblocks": 1,
     "calls": "",
     "file": "utils.h",
@@ -23,31 +32,47 @@
     },
     "total_instructions": 259
   },
-  "10": {
+  "11": {
     "basicblocks": 1,
-    "calls": "7 4",
+    "calls": "",
+    "file": "utils.h",
+    "fileloc": 14,
+    "instructions": 27,
+    "loads": {
+      "L": 7
+    },
+    "name": "pop_stream<float, 1, 1, 1>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 32
+  },
+  "2": {
+    "basicblocks": 1,
+    "calls": "1 7",
     "file": "stl_algobase.h",
     "fileloc": 784,
     "instructions": 3,
     "name": "fill_n<float *, int, double>",
     "total_instructions": 18
   },
-  "11": {
-    "basicblocks": 13,
-    "calls": "9 8 1",
-    "file": "rnn_top.cpp",
-    "fileloc": 5,
-    "instructions": 63,
+  "3": {
+    "basicblocks": 91,
+    "calls": "9 9 5 9 6 6 4 5 6 2 4",
+    "file": "rnn.cpp",
+    "fileloc": 65,
+    "instructions": 361,
     "loads": {
-      "L": 2
+      "G": 9,
+      "L": 16
     },
-    "name": "mnist_lstm<float, 1, 1, 1>",
+    "name": "infer",
     "stores": {
-      "L": 3
+      "L": 18
     },
-    "total_instructions": 961
+    "total_instructions": 607
   },
-  "2": {
+  "4": {
     "basicblocks": 7,
     "calls": "",
     "file": "rnn.cpp",
@@ -62,52 +87,7 @@
     },
     "total_instructions": 20
   },
-  "3": {
-    "basicblocks": 7,
-    "calls": "",
-    "file": "rnn.cpp",
-    "fileloc": 17,
-    "instructions": 20,
-    "loads": {
-      "L": 1
-    },
-    "name": "sigmoid",
-    "stores": {
-      "L": 1
-    },
-    "total_instructions": 20
-  },
-  "4": {
-    "basicblocks": 6,
-    "calls": "",
-    "file": "stl_algobase.h",
-    "fileloc": 749,
-    "instructions": 14,
-    "loads": {
-      "L": 1
-    },
-    "name": "__fill_n_a<float *, int, double>",
-    "stores": {
-      "L": 1
-    },
-    "total_instructions": 14
-  },
   "5": {
-    "basicblocks": 7,
-    "calls": "",
-    "file": "rnn.cpp",
-    "fileloc": 51,
-    "instructions": 20,
-    "loads": {
-      "L": 2
-    },
-    "name": "hprod",
-    "stores": {
-      "L": 1
-    },
-    "total_instructions": 20
-  },
-  "6": {
     "basicblocks": 7,
     "calls": "",
     "file": "rnn.cpp",
@@ -122,44 +102,61 @@
     },
     "total_instructions": 34
   },
-  "7": {
-    "basicblocks": 1,
+  "6": {
+    "basicblocks": 7,
     "calls": "",
-    "file": "stl_algobase.h",
-    "fileloc": 277,
-    "instructions": 1,
-    "name": "__niter_base<float *>",
-    "total_instructions": 1
-  },
-  "8": {
-    "basicblocks": 91,
-    "calls": "3 3 6 3 5 5 2 6 5 10 2",
     "file": "rnn.cpp",
-    "fileloc": 65,
-    "instructions": 361,
+    "fileloc": 51,
+    "instructions": 20,
     "loads": {
-      "G": 9,
-      "L": 16
+      "L": 2
     },
-    "name": "infer",
-    "stores": {
-      "L": 18
-    },
-    "total_instructions": 607
-  },
-  "9": {
-    "basicblocks": 1,
-    "calls": "",
-    "file": "utils.h",
-    "fileloc": 14,
-    "instructions": 27,
-    "loads": {
-      "L": 7
-    },
-    "name": "pop_stream<float, 1, 1, 1>",
+    "name": "hprod",
     "stores": {
       "L": 1
     },
-    "total_instructions": 32
+    "total_instructions": 20
+  },
+  "7": {
+    "basicblocks": 6,
+    "calls": "",
+    "file": "stl_algobase.h",
+    "fileloc": 749,
+    "instructions": 14,
+    "loads": {
+      "L": 1
+    },
+    "name": "__fill_n_a<float *, int, double>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 14
+  },
+  "8": {
+    "basicblocks": 13,
+    "calls": "11 3 10",
+    "file": "rnn_top.cpp",
+    "fileloc": 5,
+    "instructions": 52,
+    "name": "mnist_lstm<float, 1, 1, 1>",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 1092
+  },
+  "9": {
+    "basicblocks": 7,
+    "calls": "",
+    "file": "rnn.cpp",
+    "fileloc": 17,
+    "instructions": 20,
+    "loads": {
+      "L": 1
+    },
+    "name": "sigmoid",
+    "stores": {
+      "L": 1
+    },
+    "total_instructions": 20
   }
 }

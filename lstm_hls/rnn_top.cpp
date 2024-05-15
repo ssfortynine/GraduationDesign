@@ -1,25 +1,24 @@
-#include "utils.h"
 #include "rnn.h"
+
 
 template <typename T, int U, int TI, int TD>
 void mnist_lstm(hls::stream<stream_t> &in, hls::stream<stream_t> &out)
 {
-	float buf_in[IMG_SIZE], img_dat[IMG_SIZE], res[CLASS_NUM];
+	float buf_in[IMG_SIZE], res[CLASS_NUM];
 
-	// 缓存输入数据并进行归一化
+
 	for (int i = 0; i < IMG_SIZE; i++)
 	{
 #pragma HLS PIPELINE II=1
 		buf_in[i] = pop_stream <T, U, TI, TD> (in.read());
-		img_dat[i] = buf_in[i] / 255;
 	}
 
 #if CSIM_ON == 0
-	// RNN前向推导
-	infer(img_dat, res);
+
+	infer(buf_in, res);
 #endif
 
-	// 输出数据
+
 	for (int i = 0; i < CLASS_NUM; i++)
 	{
 #pragma HLS PIPELINE II=1
