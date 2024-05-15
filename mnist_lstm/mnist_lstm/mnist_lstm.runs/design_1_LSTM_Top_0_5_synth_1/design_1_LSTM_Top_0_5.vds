@@ -1,0 +1,686 @@
+#-----------------------------------------------------------
+# Vivado v2023.1 (64-bit)
+# SW Build 3865809 on Sun May  7 15:05:29 MDT 2023
+# IP Build 3864474 on Sun May  7 20:36:21 MDT 2023
+# SharedData Build 3865790 on Sun May 07 13:33:03 MDT 2023
+# Start of session at: Wed May 15 15:56:01 2024
+# Process ID: 29516
+# Current directory: C:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.runs/design_1_LSTM_Top_0_5_synth_1
+# Command line: vivado.exe -log design_1_LSTM_Top_0_5.vds -product Vivado -mode batch -messageDb vivado.pb -notrace -source design_1_LSTM_Top_0_5.tcl
+# Log file: C:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.runs/design_1_LSTM_Top_0_5_synth_1/design_1_LSTM_Top_0_5.vds
+# Journal file: C:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.runs/design_1_LSTM_Top_0_5_synth_1\vivado.jou
+# Running On: DESKTOP-FKIQQDJ, OS: Windows, CPU Frequency: 2400 MHz, CPU Physical cores: 4, Host memory: 17041 MB
+#-----------------------------------------------------------
+source design_1_LSTM_Top_0_5.tcl -notrace
+create_project: Time (s): cpu = 00:00:07 ; elapsed = 00:00:07 . Memory (MB): peak = 450.918 ; gain = 164.992
+INFO: [IP_Flow 19-234] Refreshing IP repositories
+INFO: [IP_Flow 19-1700] Loaded user IP repository 'd:/BaiduNetdiskDownload/GraduationDesign/lstm_hls/solution1/impl/ip/export'.
+INFO: [IP_Flow 19-2313] Loaded Vivado IP repository 'D:/Xilinx/Vivado/2023.1/data/ip'.
+INFO: [IP_Flow 19-6924] IPCACHE: Running cache check for IP inst: design_1_LSTM_Top_0_5
+Command: synth_design -top design_1_LSTM_Top_0_5 -part xczu5eg-sfvc784-1-e -incremental_mode off -mode out_of_context
+Starting synth_design
+Attempting to get a license for feature 'Synthesis' and/or device 'xczu5eg'
+INFO: [Common 17-349] Got license for feature 'Synthesis' and/or device 'xczu5eg'
+INFO: [Device 21-403] Loading part xczu5eg-sfvc784-1-e
+INFO: [Synth 8-7079] Multithreading enabled for synth_design using a maximum of 2 processes.
+INFO: [Synth 8-7078] Launching helper process for spawning children vivado processes
+INFO: [Synth 8-7075] Helper process launched with PID 28280
+---------------------------------------------------------------------------------
+Starting RTL Elaboration : Time (s): cpu = 00:00:11 ; elapsed = 00:00:11 . Memory (MB): peak = 1843.566 ; gain = 345.023
+---------------------------------------------------------------------------------
+INFO: [Synth 8-6157] synthesizing module 'design_1_LSTM_Top_0_5' [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ip/design_1_LSTM_Top_0_5/synth/design_1_LSTM_Top_0_5.v:53]
+INFO: [Synth 8-6157] synthesizing module 'LSTM_Top' [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top.v:9]
+INFO: [Synth 8-6157] synthesizing module 'LSTM_Top_buf_in_RAM_AUTO_1R1W' [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_buf_in_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'LSTM_Top_buf_in_RAM_AUTO_1R1W' (0#1) [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_buf_in_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'LSTM_Top_LSTM_Top_Pipeline_VITIS_LOOP_10_1' [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_LSTM_Top_Pipeline_VITIS_LOOP_10_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'LSTM_Top_flow_control_loop_pipe_sequential_init' [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'LSTM_Top_flow_control_loop_pipe_sequential_init' (0#1) [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_flow_control_loop_pipe_sequential_init.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'LSTM_Top_LSTM_Top_Pipeline_VITIS_LOOP_10_1' (0#1) [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_LSTM_Top_Pipeline_VITIS_LOOP_10_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'LSTM_Top_infer' [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer.v:9]
+INFO: [Synth 8-6157] synthesizing module 'LSTM_Top_infer_gate_f_RAM_AUTO_1R1W' [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_gate_f_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'LSTM_Top_infer_gate_f_RAM_AUTO_1R1W' (0#1) [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_gate_f_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'LSTM_Top_infer_C_t_RAM_AUTO_1R1W' [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_C_t_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'LSTM_Top_infer_C_t_RAM_AUTO_1R1W' (0#1) [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_C_t_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'LSTM_Top_infer_vec_i_RAM_AUTO_1R1W' [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_vec_i_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'LSTM_Top_infer_vec_i_RAM_AUTO_1R1W' (0#1) [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_vec_i_RAM_AUTO_1R1W.v:7]
+INFO: [Synth 8-6157] synthesizing module 'LSTM_Top_infer_Pipeline_1' [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'LSTM_Top_infer_Pipeline_1' (0#1) [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'LSTM_Top_infer_Pipeline_2' [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_2.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'LSTM_Top_infer_Pipeline_2' (0#1) [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'LSTM_Top_infer_Pipeline_3' [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_3.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'LSTM_Top_infer_Pipeline_3' (0#1) [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_3.v:9]
+INFO: [Synth 8-6157] synthesizing module 'LSTM_Top_infer_Pipeline_4' [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_4.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'LSTM_Top_infer_Pipeline_4' (0#1) [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_4.v:9]
+INFO: [Synth 8-6157] synthesizing module 'LSTM_Top_infer_Pipeline_5' [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_5.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'LSTM_Top_infer_Pipeline_5' (0#1) [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_5.v:9]
+INFO: [Synth 8-6157] synthesizing module 'LSTM_Top_infer_Pipeline_6' [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_6.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'LSTM_Top_infer_Pipeline_6' (0#1) [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_6.v:9]
+INFO: [Synth 8-6157] synthesizing module 'LSTM_Top_infer_Pipeline_VITIS_LOOP_107_2' [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_107_2.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'LSTM_Top_infer_Pipeline_VITIS_LOOP_107_2' (0#1) [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_107_2.v:9]
+INFO: [Synth 8-6157] synthesizing module 'LSTM_Top_infer_Pipeline_VITIS_LOOP_193_15' [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_193_15.v:9]
+INFO: [Synth 8-6157] synthesizing module 'LSTM_Top_infer_Pipeline_VITIS_LOOP_193_15_Weight_lc_0_ROM_AUTO_1R' [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_193_15_Weight_lc_0_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './LSTM_Top_infer_Pipeline_VITIS_LOOP_193_15_Weight_lc_0_ROM_AUTO_1R.dat' is read successfully [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_193_15_Weight_lc_0_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'LSTM_Top_infer_Pipeline_VITIS_LOOP_193_15_Weight_lc_0_ROM_AUTO_1R' (0#1) [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_193_15_Weight_lc_0_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'LSTM_Top_infer_Pipeline_VITIS_LOOP_193_15' (0#1) [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_193_15.v:9]
+INFO: [Synth 8-6157] synthesizing module 'LSTM_Top_infer_Pipeline_VITIS_LOOP_108_3' [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_108_3.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'LSTM_Top_infer_Pipeline_VITIS_LOOP_108_3' (0#1) [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_108_3.v:9]
+INFO: [Synth 8-6157] synthesizing module 'LSTM_Top_infer_Pipeline_VITIS_LOOP_114_4_VITIS_LOOP_116_5' [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_114_4_VITIS_LOOP_116_5.v:9]
+INFO: [Synth 8-6157] synthesizing module 'LSTM_Top_infer_Pipeline_VITIS_LOOP_114_4_VITIS_LOOP_116_5_Weight0_f_ROM_AUTO_1R' [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_114_4_VITIS_LOOP_116_5_Weight0_f_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './LSTM_Top_infer_Pipeline_VITIS_LOOP_114_4_VITIS_LOOP_116_5_Weight0_f_ROM_AUTO_1R.dat' is read successfully [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_114_4_VITIS_LOOP_116_5_Weight0_f_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'LSTM_Top_infer_Pipeline_VITIS_LOOP_114_4_VITIS_LOOP_116_5_Weight0_f_ROM_AUTO_1R' (0#1) [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_114_4_VITIS_LOOP_116_5_Weight0_f_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'LSTM_Top_infer_Pipeline_VITIS_LOOP_114_4_VITIS_LOOP_116_5_Bias0_f_ROM_AUTO_1R' [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_114_4_VITIS_LOOP_116_5_Bias0_f_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './LSTM_Top_infer_Pipeline_VITIS_LOOP_114_4_VITIS_LOOP_116_5_Bias0_f_ROM_AUTO_1R.dat' is read successfully [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_114_4_VITIS_LOOP_116_5_Bias0_f_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'LSTM_Top_infer_Pipeline_VITIS_LOOP_114_4_VITIS_LOOP_116_5_Bias0_f_ROM_AUTO_1R' (0#1) [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_114_4_VITIS_LOOP_116_5_Bias0_f_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'LSTM_Top_mac_muladd_8ns_8ns_8ns_15_4_1' [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_mac_muladd_8ns_8ns_8ns_15_4_1.v:49]
+INFO: [Synth 8-6157] synthesizing module 'LSTM_Top_mac_muladd_8ns_8ns_8ns_15_4_1_DSP48_0' [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_mac_muladd_8ns_8ns_8ns_15_4_1.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'LSTM_Top_mac_muladd_8ns_8ns_8ns_15_4_1_DSP48_0' (0#1) [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_mac_muladd_8ns_8ns_8ns_15_4_1.v:10]
+INFO: [Synth 8-6155] done synthesizing module 'LSTM_Top_mac_muladd_8ns_8ns_8ns_15_4_1' (0#1) [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_mac_muladd_8ns_8ns_8ns_15_4_1.v:49]
+INFO: [Synth 8-6155] done synthesizing module 'LSTM_Top_infer_Pipeline_VITIS_LOOP_114_4_VITIS_LOOP_116_5' (0#1) [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_114_4_VITIS_LOOP_116_5.v:9]
+INFO: [Synth 8-6157] synthesizing module 'LSTM_Top_infer_Pipeline_VITIS_LOOP_22_1' [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_22_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'LSTM_Top_infer_Pipeline_VITIS_LOOP_22_1' (0#1) [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_22_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'LSTM_Top_infer_Pipeline_VITIS_LOOP_128_6_VITIS_LOOP_130_7' [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_128_6_VITIS_LOOP_130_7.v:9]
+INFO: [Synth 8-6157] synthesizing module 'LSTM_Top_infer_Pipeline_VITIS_LOOP_128_6_VITIS_LOOP_130_7_Weight0_i_ROM_AUTO_1R' [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_128_6_VITIS_LOOP_130_7_Weight0_i_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './LSTM_Top_infer_Pipeline_VITIS_LOOP_128_6_VITIS_LOOP_130_7_Weight0_i_ROM_AUTO_1R.dat' is read successfully [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_128_6_VITIS_LOOP_130_7_Weight0_i_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'LSTM_Top_infer_Pipeline_VITIS_LOOP_128_6_VITIS_LOOP_130_7_Weight0_i_ROM_AUTO_1R' (0#1) [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_128_6_VITIS_LOOP_130_7_Weight0_i_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'LSTM_Top_infer_Pipeline_VITIS_LOOP_128_6_VITIS_LOOP_130_7_Bias0_i_ROM_AUTO_1R' [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_128_6_VITIS_LOOP_130_7_Bias0_i_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './LSTM_Top_infer_Pipeline_VITIS_LOOP_128_6_VITIS_LOOP_130_7_Bias0_i_ROM_AUTO_1R.dat' is read successfully [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_128_6_VITIS_LOOP_130_7_Bias0_i_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'LSTM_Top_infer_Pipeline_VITIS_LOOP_128_6_VITIS_LOOP_130_7_Bias0_i_ROM_AUTO_1R' (0#1) [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_128_6_VITIS_LOOP_130_7_Bias0_i_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'LSTM_Top_infer_Pipeline_VITIS_LOOP_128_6_VITIS_LOOP_130_7' (0#1) [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_128_6_VITIS_LOOP_130_7.v:9]
+INFO: [Synth 8-6157] synthesizing module 'LSTM_Top_infer_Pipeline_VITIS_LOOP_22_11' [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_22_11.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'LSTM_Top_infer_Pipeline_VITIS_LOOP_22_11' (0#1) [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_22_11.v:9]
+INFO: [Synth 8-6157] synthesizing module 'LSTM_Top_infer_Pipeline_VITIS_LOOP_142_8_VITIS_LOOP_144_9' [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_142_8_VITIS_LOOP_144_9.v:9]
+INFO: [Synth 8-6157] synthesizing module 'LSTM_Top_infer_Pipeline_VITIS_LOOP_142_8_VITIS_LOOP_144_9_Weight0_c_ROM_AUTO_1R' [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_142_8_VITIS_LOOP_144_9_Weight0_c_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './LSTM_Top_infer_Pipeline_VITIS_LOOP_142_8_VITIS_LOOP_144_9_Weight0_c_ROM_AUTO_1R.dat' is read successfully [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_142_8_VITIS_LOOP_144_9_Weight0_c_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'LSTM_Top_infer_Pipeline_VITIS_LOOP_142_8_VITIS_LOOP_144_9_Weight0_c_ROM_AUTO_1R' (0#1) [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_142_8_VITIS_LOOP_144_9_Weight0_c_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'LSTM_Top_infer_Pipeline_VITIS_LOOP_142_8_VITIS_LOOP_144_9_Bias0_c_ROM_AUTO_1R' [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_142_8_VITIS_LOOP_144_9_Bias0_c_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './LSTM_Top_infer_Pipeline_VITIS_LOOP_142_8_VITIS_LOOP_144_9_Bias0_c_ROM_AUTO_1R.dat' is read successfully [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_142_8_VITIS_LOOP_144_9_Bias0_c_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'LSTM_Top_infer_Pipeline_VITIS_LOOP_142_8_VITIS_LOOP_144_9_Bias0_c_ROM_AUTO_1R' (0#1) [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_142_8_VITIS_LOOP_144_9_Bias0_c_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'LSTM_Top_infer_Pipeline_VITIS_LOOP_142_8_VITIS_LOOP_144_9' (0#1) [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_142_8_VITIS_LOOP_144_9.v:9]
+INFO: [Synth 8-6157] synthesizing module 'LSTM_Top_infer_Pipeline_VITIS_LOOP_34_1' [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_34_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'LSTM_Top_infer_Pipeline_VITIS_LOOP_34_1' (0#1) [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_34_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'LSTM_Top_infer_Pipeline_VITIS_LOOP_156_10_VITIS_LOOP_158_11' [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_156_10_VITIS_LOOP_158_11.v:9]
+INFO: [Synth 8-6157] synthesizing module 'LSTM_Top_infer_Pipeline_VITIS_LOOP_156_10_VITIS_LOOP_158_11_Weight0_o_ROM_AUTO_1R' [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_156_10_VITIS_LOOP_158_11_Weight0_o_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './LSTM_Top_infer_Pipeline_VITIS_LOOP_156_10_VITIS_LOOP_158_11_Weight0_o_ROM_AUTO_1R.dat' is read successfully [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_156_10_VITIS_LOOP_158_11_Weight0_o_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'LSTM_Top_infer_Pipeline_VITIS_LOOP_156_10_VITIS_LOOP_158_11_Weight0_o_ROM_AUTO_1R' (0#1) [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_156_10_VITIS_LOOP_158_11_Weight0_o_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6157] synthesizing module 'LSTM_Top_infer_Pipeline_VITIS_LOOP_156_10_VITIS_LOOP_158_11_Bias0_o_ROM_AUTO_1R' [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_156_10_VITIS_LOOP_158_11_Bias0_o_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-3876] $readmem data file './LSTM_Top_infer_Pipeline_VITIS_LOOP_156_10_VITIS_LOOP_158_11_Bias0_o_ROM_AUTO_1R.dat' is read successfully [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_156_10_VITIS_LOOP_158_11_Bias0_o_ROM_AUTO_1R.v:28]
+INFO: [Synth 8-6155] done synthesizing module 'LSTM_Top_infer_Pipeline_VITIS_LOOP_156_10_VITIS_LOOP_158_11_Bias0_o_ROM_AUTO_1R' (0#1) [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_156_10_VITIS_LOOP_158_11_Bias0_o_ROM_AUTO_1R.v:7]
+INFO: [Synth 8-6155] done synthesizing module 'LSTM_Top_infer_Pipeline_VITIS_LOOP_156_10_VITIS_LOOP_158_11' (0#1) [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_156_10_VITIS_LOOP_158_11.v:9]
+INFO: [Synth 8-6157] synthesizing module 'LSTM_Top_infer_Pipeline_VITIS_LOOP_22_12' [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_22_12.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'LSTM_Top_infer_Pipeline_VITIS_LOOP_22_12' (0#1) [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_22_12.v:9]
+INFO: [Synth 8-6157] synthesizing module 'LSTM_Top_infer_Pipeline_VITIS_LOOP_170_12' [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_170_12.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'LSTM_Top_infer_Pipeline_VITIS_LOOP_170_12' (0#1) [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_170_12.v:9]
+INFO: [Synth 8-6157] synthesizing module 'LSTM_Top_infer_Pipeline_VITIS_LOOP_56_1' [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_56_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'LSTM_Top_infer_Pipeline_VITIS_LOOP_56_1' (0#1) [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_56_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'LSTM_Top_infer_Pipeline_VITIS_LOOP_56_13' [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_56_13.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'LSTM_Top_infer_Pipeline_VITIS_LOOP_56_13' (0#1) [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_56_13.v:9]
+INFO: [Synth 8-6157] synthesizing module 'LSTM_Top_infer_Pipeline_VITIS_LOOP_45_1' [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_45_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'LSTM_Top_infer_Pipeline_VITIS_LOOP_45_1' (0#1) [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_45_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'LSTM_Top_infer_Pipeline_VITIS_LOOP_181_13' [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_181_13.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'LSTM_Top_infer_Pipeline_VITIS_LOOP_181_13' (0#1) [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_181_13.v:9]
+INFO: [Synth 8-6157] synthesizing module 'LSTM_Top_infer_Pipeline_VITIS_LOOP_34_14' [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_34_14.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'LSTM_Top_infer_Pipeline_VITIS_LOOP_34_14' (0#1) [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_34_14.v:9]
+INFO: [Synth 8-6157] synthesizing module 'LSTM_Top_infer_Pipeline_VITIS_LOOP_56_15' [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_56_15.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'LSTM_Top_infer_Pipeline_VITIS_LOOP_56_15' (0#1) [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_56_15.v:9]
+INFO: [Synth 8-6157] synthesizing module 'LSTM_Top_faddfsub_32ns_32ns_32_5_full_dsp_1' [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_faddfsub_32ns_32ns_32_5_full_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'LSTM_Top_faddfsub_32ns_32ns_32_5_full_dsp_1_ip' [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/ip/LSTM_Top_faddfsub_32ns_32ns_32_5_full_dsp_1_ip.v:53]
+INFO: [Synth 8-6157] synthesizing module 'LUT1' [D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:79430]
+INFO: [Synth 8-6155] done synthesizing module 'LUT1' (0#1) [D:/Xilinx/Vivado/2023.1/scripts/rt/data/unisim_comp.v:79430]
+INFO: [Synth 8-6155] done synthesizing module 'LSTM_Top_faddfsub_32ns_32ns_32_5_full_dsp_1_ip' (0#1) [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/ip/LSTM_Top_faddfsub_32ns_32ns_32_5_full_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'LSTM_Top_faddfsub_32ns_32ns_32_5_full_dsp_1' (0#1) [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_faddfsub_32ns_32ns_32_5_full_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'LSTM_Top_fmul_32ns_32ns_32_4_max_dsp_1' [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_fmul_32ns_32ns_32_4_max_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'LSTM_Top_fmul_32ns_32ns_32_4_max_dsp_1_ip' [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/ip/LSTM_Top_fmul_32ns_32ns_32_4_max_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'LSTM_Top_fmul_32ns_32ns_32_4_max_dsp_1_ip' (0#1) [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/ip/LSTM_Top_fmul_32ns_32ns_32_4_max_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'LSTM_Top_fmul_32ns_32ns_32_4_max_dsp_1' (0#1) [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_fmul_32ns_32ns_32_4_max_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'LSTM_Top_fdiv_32ns_32ns_32_10_no_dsp_1' [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_fdiv_32ns_32ns_32_10_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'LSTM_Top_fdiv_32ns_32ns_32_10_no_dsp_1_ip' [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/ip/LSTM_Top_fdiv_32ns_32ns_32_10_no_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'LSTM_Top_fdiv_32ns_32ns_32_10_no_dsp_1_ip' (0#1) [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/ip/LSTM_Top_fdiv_32ns_32ns_32_10_no_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'LSTM_Top_fdiv_32ns_32ns_32_10_no_dsp_1' (0#1) [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_fdiv_32ns_32ns_32_10_no_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'LSTM_Top_fexp_32ns_32ns_32_8_full_dsp_1' [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_fexp_32ns_32ns_32_8_full_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'LSTM_Top_fexp_32ns_32ns_32_8_full_dsp_1_ip' [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/ip/LSTM_Top_fexp_32ns_32ns_32_8_full_dsp_1_ip.v:53]
+WARNING: [Synth 8-5974] attribute "use_dsp48" has been deprecated, please use "use_dsp" instead 
+INFO: [Synth 8-6155] done synthesizing module 'LSTM_Top_fexp_32ns_32ns_32_8_full_dsp_1_ip' (0#1) [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/ip/LSTM_Top_fexp_32ns_32ns_32_8_full_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'LSTM_Top_fexp_32ns_32ns_32_8_full_dsp_1' (0#1) [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_fexp_32ns_32ns_32_8_full_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'LSTM_Top_fadd_32ns_32ns_32_5_full_dsp_1' [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_fadd_32ns_32ns_32_5_full_dsp_1.v:9]
+INFO: [Synth 8-6157] synthesizing module 'LSTM_Top_fadd_32ns_32ns_32_5_full_dsp_1_ip' [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/ip/LSTM_Top_fadd_32ns_32ns_32_5_full_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'LSTM_Top_fadd_32ns_32ns_32_5_full_dsp_1_ip' (0#1) [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/ip/LSTM_Top_fadd_32ns_32ns_32_5_full_dsp_1_ip.v:53]
+INFO: [Synth 8-6155] done synthesizing module 'LSTM_Top_fadd_32ns_32ns_32_5_full_dsp_1' (0#1) [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_fadd_32ns_32ns_32_5_full_dsp_1.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'LSTM_Top_infer' (0#1) [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer.v:9]
+INFO: [Synth 8-6157] synthesizing module 'LSTM_Top_regslice_both' [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_regslice_both.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'LSTM_Top_regslice_both' (0#1) [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_regslice_both.v:11]
+INFO: [Synth 8-6157] synthesizing module 'LSTM_Top_regslice_both__parameterized0' [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_regslice_both.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'LSTM_Top_regslice_both__parameterized0' (0#1) [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_regslice_both.v:11]
+INFO: [Synth 8-6157] synthesizing module 'LSTM_Top_regslice_both__parameterized1' [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_regslice_both.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'LSTM_Top_regslice_both__parameterized1' (0#1) [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_regslice_both.v:11]
+INFO: [Synth 8-6155] done synthesizing module 'LSTM_Top' (0#1) [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top.v:9]
+INFO: [Synth 8-6155] done synthesizing module 'design_1_LSTM_Top_0_5' (0#1) [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ip/design_1_LSTM_Top_0_5/synth/design_1_LSTM_Top_0_5.v:53]
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized3 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized55 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized55 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized55 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized55 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized55 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized27 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized27 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized27 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized130 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized130 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized130 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized75 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized75 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized75 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized75 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized75 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized23 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized23 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized23 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized23 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized23 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized95 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized95 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized95 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized95 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized95 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[0] in module compare_ne_im is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CARRYS_OUT[0] in module compare_eq_im__parameterized4 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized128 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized128 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized128 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized128 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized128 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized29 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized29 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized29 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized29 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized29 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized72 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized72 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized72 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized72 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized72 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized13 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized11 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized7 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module dsp48e1_wrapper__parameterized9 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized25 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized25 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized25 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized25 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized25 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port NORMALIZE[1] in module flt_round_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FIXED_POINT in module flt_round_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port FIX_MANT_SIGN in module flt_round_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SIGN in module flt_round_bit is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized51 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized51 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized51 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized51 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized51 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized43 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized43 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized43 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized43 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized43 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized77 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized77 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized77 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized77 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized77 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CLK in module xbip_pipe_v3_0_6_viv__parameterized68 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port CE in module xbip_pipe_v3_0_6_viv__parameterized68 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SCLR in module xbip_pipe_v3_0_6_viv__parameterized68 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SSET in module xbip_pipe_v3_0_6_viv__parameterized68 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port SINIT in module xbip_pipe_v3_0_6_viv__parameterized68 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port EXP_OUT[7] in module renorm_and_round_logic__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port EXP_OUT[6] in module renorm_and_round_logic__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port EXP_OUT[5] in module renorm_and_round_logic__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port EXP_OUT[4] in module renorm_and_round_logic__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port EXP_OUT[3] in module renorm_and_round_logic__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port EXP_OUT[2] in module renorm_and_round_logic__parameterized0 is either unconnected or has no load
+WARNING: [Synth 8-7129] Port EXP_OUT[1] in module renorm_and_round_logic__parameterized0 is either unconnected or has no load
+INFO: [Common 17-14] Message 'Synth 8-7129' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+---------------------------------------------------------------------------------
+Finished RTL Elaboration : Time (s): cpu = 00:00:33 ; elapsed = 00:00:37 . Memory (MB): peak = 2164.043 ; gain = 665.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 2164.043 ; gain = 665.500
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 1 : Time (s): cpu = 00:00:34 ; elapsed = 00:00:37 . Memory (MB): peak = 2164.043 ; gain = 665.500
+---------------------------------------------------------------------------------
+Netlist sorting complete. Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.864 . Memory (MB): peak = 2164.043 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 1797 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+
+Processing XDC Constraints
+Initializing timing engine
+Parsing XDC File [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ip/design_1_LSTM_Top_0_5/constraints/LSTM_Top_ooc.xdc] for cell 'inst'
+create_clock: Time (s): cpu = 00:00:06 ; elapsed = 00:00:05 . Memory (MB): peak = 2280.410 ; gain = 0.039
+Finished Parsing XDC File [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ip/design_1_LSTM_Top_0_5/constraints/LSTM_Top_ooc.xdc] for cell 'inst'
+Parsing XDC File [C:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.runs/design_1_LSTM_Top_0_5_synth_1/dont_touch.xdc]
+Finished Parsing XDC File [C:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.runs/design_1_LSTM_Top_0_5_synth_1/dont_touch.xdc]
+Completed Processing XDC Constraints
+
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.018 . Memory (MB): peak = 2280.410 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 31 instances were transformed.
+  DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 21 instances
+  FDE => FDRE: 10 instances
+
+Constraint Validation Runtime : Time (s): cpu = 00:00:01 ; elapsed = 00:00:00.405 . Memory (MB): peak = 2286.113 ; gain = 5.703
+INFO: [Designutils 20-5008] Incremental synthesis strategy off
+---------------------------------------------------------------------------------
+Finished Constraint Validation : Time (s): cpu = 00:00:59 ; elapsed = 00:01:05 . Memory (MB): peak = 2286.113 ; gain = 787.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Loading Part and Timing Information
+---------------------------------------------------------------------------------
+Loading part: xczu5eg-sfvc784-1-e
+INFO: [Synth 8-6742] Reading net delay rules and data
+---------------------------------------------------------------------------------
+Finished Loading Part and Timing Information : Time (s): cpu = 00:00:59 ; elapsed = 00:01:05 . Memory (MB): peak = 2286.113 ; gain = 787.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying 'set_property' XDC Constraints
+---------------------------------------------------------------------------------
+Applied set_property KEEP_HIERARCHY = SOFT for inst. (constraint file  C:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.runs/design_1_LSTM_Top_0_5_synth_1/dont_touch.xdc, line 9).
+---------------------------------------------------------------------------------
+Finished applying 'set_property' XDC Constraints : Time (s): cpu = 00:00:59 ; elapsed = 00:01:05 . Memory (MB): peak = 2286.113 ; gain = 787.570
+---------------------------------------------------------------------------------
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln114_reg_355_pp0_iter4_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_114_4_VITIS_LOOP_116_5.v:423]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln114_reg_355_pp0_iter3_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_114_4_VITIS_LOOP_116_5.v:422]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln114_reg_355_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_114_4_VITIS_LOOP_116_5.v:421]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln114_2_reg_306_pp0_iter1_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_114_4_VITIS_LOOP_116_5.v:420]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln114_2_reg_306_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_114_4_VITIS_LOOP_116_5.v:431]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_cast_reg_136_pp0_iter24_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_22_1.v:572]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_cast_reg_136_pp0_iter23_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_22_1.v:571]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_cast_reg_136_pp0_iter22_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_22_1.v:570]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_cast_reg_136_pp0_iter21_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_22_1.v:569]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_cast_reg_136_pp0_iter20_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_22_1.v:568]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_cast_reg_136_pp0_iter19_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_22_1.v:567]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_cast_reg_136_pp0_iter18_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_22_1.v:566]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_cast_reg_136_pp0_iter17_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_22_1.v:565]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_cast_reg_136_pp0_iter16_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_22_1.v:564]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_cast_reg_136_pp0_iter15_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_22_1.v:563]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_cast_reg_136_pp0_iter14_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_22_1.v:562]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_cast_reg_136_pp0_iter13_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_22_1.v:561]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_cast_reg_136_pp0_iter12_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_22_1.v:560]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_cast_reg_136_pp0_iter11_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_22_1.v:559]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_cast_reg_136_pp0_iter10_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_22_1.v:558]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_cast_reg_136_pp0_iter9_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_22_1.v:558]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_cast_reg_136_pp0_iter8_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_22_1.v:579]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_cast_reg_136_pp0_iter7_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_22_1.v:578]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_cast_reg_136_pp0_iter6_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_22_1.v:577]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_cast_reg_136_pp0_iter5_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_22_1.v:576]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_cast_reg_136_pp0_iter4_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_22_1.v:575]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_cast_reg_136_pp0_iter3_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_22_1.v:574]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_cast_reg_136_pp0_iter2_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_22_1.v:573]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_cast_reg_136_pp0_iter1_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_22_1.v:589]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_2_cast_reg_136_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_22_1.v:596]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln128_reg_355_pp0_iter4_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_128_6_VITIS_LOOP_130_7.v:423]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln128_reg_355_pp0_iter3_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_128_6_VITIS_LOOP_130_7.v:422]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln128_reg_355_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_128_6_VITIS_LOOP_130_7.v:421]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln128_2_reg_306_pp0_iter1_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_128_6_VITIS_LOOP_130_7.v:420]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln128_2_reg_306_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_128_6_VITIS_LOOP_130_7.v:431]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_4_cast_reg_136_pp0_iter24_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_22_11.v:572]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_4_cast_reg_136_pp0_iter23_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_22_11.v:571]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_4_cast_reg_136_pp0_iter22_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_22_11.v:570]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_4_cast_reg_136_pp0_iter21_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_22_11.v:569]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_4_cast_reg_136_pp0_iter20_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_22_11.v:568]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_4_cast_reg_136_pp0_iter19_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_22_11.v:567]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_4_cast_reg_136_pp0_iter18_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_22_11.v:566]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_4_cast_reg_136_pp0_iter17_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_22_11.v:565]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_4_cast_reg_136_pp0_iter16_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_22_11.v:564]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_4_cast_reg_136_pp0_iter15_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_22_11.v:563]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_4_cast_reg_136_pp0_iter14_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_22_11.v:562]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_4_cast_reg_136_pp0_iter13_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_22_11.v:561]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_4_cast_reg_136_pp0_iter12_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_22_11.v:560]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_4_cast_reg_136_pp0_iter11_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_22_11.v:559]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_4_cast_reg_136_pp0_iter10_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_22_11.v:558]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_4_cast_reg_136_pp0_iter9_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_22_11.v:558]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_4_cast_reg_136_pp0_iter8_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_22_11.v:579]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_4_cast_reg_136_pp0_iter7_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_22_11.v:578]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_4_cast_reg_136_pp0_iter6_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_22_11.v:577]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_4_cast_reg_136_pp0_iter5_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_22_11.v:576]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_4_cast_reg_136_pp0_iter4_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_22_11.v:575]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_4_cast_reg_136_pp0_iter3_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_22_11.v:574]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_4_cast_reg_136_pp0_iter2_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_22_11.v:573]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_4_cast_reg_136_pp0_iter1_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_22_11.v:589]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_4_cast_reg_136_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_22_11.v:596]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln142_reg_355_pp0_iter4_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_142_8_VITIS_LOOP_144_9.v:423]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln142_reg_355_pp0_iter3_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_142_8_VITIS_LOOP_144_9.v:422]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln142_reg_355_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_142_8_VITIS_LOOP_144_9.v:421]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln142_2_reg_306_pp0_iter1_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_142_8_VITIS_LOOP_144_9.v:420]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln142_2_reg_306_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_142_8_VITIS_LOOP_144_9.v:431]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_6_cast_reg_141_pp0_iter24_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_34_1.v:592]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_6_cast_reg_141_pp0_iter23_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_34_1.v:591]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_6_cast_reg_141_pp0_iter22_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_34_1.v:590]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_6_cast_reg_141_pp0_iter21_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_34_1.v:589]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_6_cast_reg_141_pp0_iter20_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_34_1.v:588]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_6_cast_reg_141_pp0_iter19_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_34_1.v:587]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_6_cast_reg_141_pp0_iter18_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_34_1.v:586]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_6_cast_reg_141_pp0_iter17_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_34_1.v:585]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_6_cast_reg_141_pp0_iter16_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_34_1.v:584]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_6_cast_reg_141_pp0_iter15_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_34_1.v:583]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_6_cast_reg_141_pp0_iter14_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_34_1.v:582]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_6_cast_reg_141_pp0_iter13_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_34_1.v:581]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_6_cast_reg_141_pp0_iter12_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_34_1.v:580]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_6_cast_reg_141_pp0_iter11_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_34_1.v:579]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_6_cast_reg_141_pp0_iter10_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_34_1.v:578]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_6_cast_reg_141_pp0_iter9_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_34_1.v:578]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_6_cast_reg_141_pp0_iter8_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_34_1.v:599]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_6_cast_reg_141_pp0_iter7_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_34_1.v:598]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_6_cast_reg_141_pp0_iter6_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_34_1.v:597]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_6_cast_reg_141_pp0_iter5_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_34_1.v:596]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_6_cast_reg_141_pp0_iter4_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_34_1.v:595]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_6_cast_reg_141_pp0_iter3_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_34_1.v:594]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_6_cast_reg_141_pp0_iter2_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_34_1.v:593]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_6_cast_reg_141_pp0_iter1_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_34_1.v:611]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_6_cast_reg_141_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_34_1.v:618]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln156_reg_355_pp0_iter4_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_156_10_VITIS_LOOP_158_11.v:423]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln156_reg_355_pp0_iter3_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_156_10_VITIS_LOOP_158_11.v:422]
+WARNING: [Synth 8-3936] Found unconnected internal register 'zext_ln156_reg_355_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_156_10_VITIS_LOOP_158_11.v:421]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln156_2_reg_306_pp0_iter1_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_156_10_VITIS_LOOP_158_11.v:420]
+WARNING: [Synth 8-3936] Found unconnected internal register 'select_ln156_2_reg_306_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_156_10_VITIS_LOOP_158_11.v:431]
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_8_cast_reg_136_pp0_iter24_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_22_12.v:572]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_8_cast_reg_136_pp0_iter23_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_22_12.v:571]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_8_cast_reg_136_pp0_iter22_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_22_12.v:570]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_8_cast_reg_136_pp0_iter21_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_22_12.v:569]
+WARNING: [Synth 8-3936] Found unconnected internal register 'i_8_cast_reg_136_pp0_iter20_reg_reg' and it is trimmed from '8' to '7' bits. [c:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.gen/sources_1/bd/design_1/ipshared/2253/hdl/verilog/LSTM_Top_infer_Pipeline_VITIS_LOOP_22_12.v:568]
+INFO: [Common 17-14] Message 'Synth 8-3936' appears 100 times and further instances of the messages will be disabled. Use the Tcl command set_msg_config to change the current settings.
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-4490] FSM extraction disabled for register 'ap_CS_fsm_reg' through user attribute
+INFO: [Synth 8-6904] The RAM "LSTM_Top_buf_in_RAM_AUTO_1R1W:/ram_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "LSTM_Top_infer_gate_f_RAM_AUTO_1R1W:/ram_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "LSTM_Top_infer_C_t_RAM_AUTO_1R1W:/ram_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "LSTM_Top_infer_vec_i_RAM_AUTO_1R1W:/ram_reg" of size (depth=133 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+---------------------------------------------------------------------------------
+Finished RTL Optimization Phase 2 : Time (s): cpu = 00:01:08 ; elapsed = 00:01:15 . Memory (MB): peak = 2286.113 ; gain = 787.570
+---------------------------------------------------------------------------------
+INFO: [Synth 8-223] decloning instance 'flt_add_dsp:/DSP48E1_BODY.ALIGN_ADD/SUB_DELAY' (delay__parameterized0) to 'flt_add_dsp:/DSP48E1_BODY.ALIGN_ADD/SUB_ADD_IP_DELAY'
+INFO: [Synth 8-223] decloning instance 'inst/grp_infer_fu_144/faddfsub_32ns_32ns_32_5_full_dsp_1_U101/LSTM_Top_faddfsub_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/grp_infer_fu_144/faddfsub_32ns_32ns_32_5_full_dsp_1_U101/LSTM_Top_faddfsub_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/grp_infer_fu_144/faddfsub_32ns_32ns_32_5_full_dsp_1_U101/LSTM_Top_faddfsub_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/grp_infer_fu_144/faddfsub_32ns_32ns_32_5_full_dsp_1_U101/LSTM_Top_faddfsub_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/grp_infer_fu_144/fmul_32ns_32ns_32_4_max_dsp_1_U102/LSTM_Top_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/grp_infer_fu_144/fmul_32ns_32ns_32_4_max_dsp_1_U102/LSTM_Top_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/grp_infer_fu_144/fmul_32ns_32ns_32_4_max_dsp_1_U102/LSTM_Top_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/grp_infer_fu_144/fmul_32ns_32ns_32_4_max_dsp_1_U102/LSTM_Top_fmul_32ns_32ns_32_4_max_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/grp_infer_fu_144/fdiv_32ns_32ns_32_10_no_dsp_1_U103/LSTM_Top_fdiv_32ns_32ns_32_10_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/ROUND/EXTRA_LSB_BIT_DEL' (delay__parameterized0) to 'inst/grp_infer_fu_144/fdiv_32ns_32ns_32_10_no_dsp_1_U103/LSTM_Top_fdiv_32ns_32ns_32_10_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/ROUND/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/grp_infer_fu_144/fdiv_32ns_32ns_32_10_no_dsp_1_U103/LSTM_Top_fdiv_32ns_32ns_32_10_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/ROUND/EXP_INC_DELAY' (delay__parameterized0) to 'inst/grp_infer_fu_144/fdiv_32ns_32ns_32_10_no_dsp_1_U103/LSTM_Top_fdiv_32ns_32ns_32_10_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/ROUND/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'inst/grp_infer_fu_144/fdiv_32ns_32ns_32_10_no_dsp_1_U103/LSTM_Top_fdiv_32ns_32ns_32_10_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_IN_DEL' (delay__parameterized27) to 'inst/grp_infer_fu_144/fdiv_32ns_32ns_32_10_no_dsp_1_U103/LSTM_Top_fdiv_32ns_32ns_32_10_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/grp_infer_fu_144/fdiv_32ns_32ns_32_10_no_dsp_1_U103/LSTM_Top_fdiv_32ns_32ns_32_10_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/ROUND/EXP_IN_DELAY.EXP_OFF_OP_DEL' (delay__parameterized27) to 'inst/grp_infer_fu_144/fdiv_32ns_32ns_32_10_no_dsp_1_U103/LSTM_Top_fdiv_32ns_32ns_32_10_no_dsp_1_ip_u/inst/i_synth/DIV_OP.SPD.OP/ROUND/EXP_RND2_DELAY.EXP_OFF_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'inst/grp_infer_fu_144/fdiv_32ns_32ns_32_10_no_dsp_1_U103/LSTM_Top_fdiv_32ns_32ns_32_10_no_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW' (delay__parameterized0) to 'inst/grp_infer_fu_144/fdiv_32ns_32ns_32_10_no_dsp_1_U103/LSTM_Top_fdiv_32ns_32ns_32_10_no_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'LSTM_Top_fexp_32ns_32ns_32_8_full_dsp_1:/LSTM_Top_fexp_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[0].i_sign_delay' (delay__parameterized0) to 'LSTM_Top_fexp_32ns_32ns_32_8_full_dsp_1:/LSTM_Top_fexp_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_recip_ln2/g_tables[1].i_sign_delay'
+INFO: [Synth 8-223] decloning instance 'LSTM_Top_fexp_32ns_32ns_32_8_full_dsp_1:/LSTM_Top_fexp_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[0].i_sign_delay' (delay__parameterized0) to 'LSTM_Top_fexp_32ns_32ns_32_8_full_dsp_1:/LSTM_Top_fexp_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/i_ccm_ln2/g_tables[1].i_sign_delay'
+INFO: [Synth 8-223] decloning instance 'LSTM_Top_fexp_32ns_32ns_32_8_full_dsp_1:/LSTM_Top_fexp_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/i_renorm_and_round/EXTRA_LSB_BIT_DEL' (delay__parameterized0) to 'LSTM_Top_fexp_32ns_32ns_32_8_full_dsp_1:/LSTM_Top_fexp_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/i_renorm_and_round/EXTRA_LSB_RND1_DEL'
+INFO: [Synth 8-223] decloning instance 'LSTM_Top_fexp_32ns_32ns_32_8_full_dsp_1:/LSTM_Top_fexp_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/i_renorm_and_round/EXP_INC_DELAY' (delay__parameterized0) to 'LSTM_Top_fexp_32ns_32ns_32_8_full_dsp_1:/LSTM_Top_fexp_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/i_renorm_and_round/EXP_INC_RND1_DELAY'
+INFO: [Synth 8-223] decloning instance 'LSTM_Top_fexp_32ns_32ns_32_8_full_dsp_1:/LSTM_Top_fexp_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/i_renorm_and_round/EXP_IN_DELAY.EXP_IN_DEL' (delay__parameterized27) to 'LSTM_Top_fexp_32ns_32ns_32_8_full_dsp_1:/LSTM_Top_fexp_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/i_renorm_and_round/EXP_RND2_DELAY.EXP_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'LSTM_Top_fexp_32ns_32ns_32_8_full_dsp_1:/LSTM_Top_fexp_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/i_renorm_and_round/EXP_IN_DELAY.EXP_OFF_OP_DEL' (delay__parameterized27) to 'LSTM_Top_fexp_32ns_32ns_32_8_full_dsp_1:/LSTM_Top_fexp_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/EXP_OP.i_sp_or_dp.OP/i_renorm_and_round/EXP_RND2_DELAY.EXP_OFF_RND_DEL'
+INFO: [Synth 8-223] decloning instance 'LSTM_Top_fexp_32ns_32ns_32_8_full_dsp_1:/LSTM_Top_fexp_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'LSTM_Top_fexp_32ns_32ns_32_8_full_dsp_1:/LSTM_Top_fexp_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO'
+INFO: [Synth 8-223] decloning instance 'LSTM_Top_fexp_32ns_32ns_32_8_full_dsp_1:/LSTM_Top_fexp_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'LSTM_Top_fexp_32ns_32ns_32_8_full_dsp_1:/LSTM_Top_fexp_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'LSTM_Top_fexp_32ns_32ns_32_8_full_dsp_1:/LSTM_Top_fexp_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/DELAY_INVALID_OP' (delay__parameterized0) to 'LSTM_Top_fexp_32ns_32ns_32_8_full_dsp_1:/LSTM_Top_fexp_32ns_32ns_32_8_full_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/grp_infer_fu_144/fadd_32ns_32ns_32_5_full_dsp_1_U105/LSTM_Top_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/grp_infer_fu_144/fadd_32ns_32ns_32_5_full_dsp_1_U105/LSTM_Top_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/grp_infer_fu_144/fadd_32ns_32ns_32_5_full_dsp_1_U105/LSTM_Top_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/DELAY_DIVIDE_BY_ZERO' (delay__parameterized0) to 'inst/grp_infer_fu_144/fadd_32ns_32ns_32_5_full_dsp_1_U105/LSTM_Top_fadd_32ns_32ns_32_5_full_dsp_1_ip_u/inst/i_synth/DELAY_ACCUM_INPUT_OVERFLOW'
+INFO: [Synth 8-223] decloning instance 'inst/regslice_both_out_r_V_keep_V_U' (LSTM_Top_regslice_both__parameterized0) to 'inst/regslice_both_out_r_V_strb_V_U'
+INFO: [Synth 8-223] decloning instance 'inst/regslice_both_out_r_V_user_V_U' (LSTM_Top_regslice_both__parameterized1) to 'inst/regslice_both_out_r_V_id_V_U'
+INFO: [Synth 8-223] decloning instance 'inst/regslice_both_out_r_V_user_V_U' (LSTM_Top_regslice_both__parameterized1) to 'inst/regslice_both_out_r_V_dest_V_U'
+---------------------------------------------------------------------------------
+Start RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished RTL Component Statistics 
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Part Resource Summary
+---------------------------------------------------------------------------------
+Part Resources:
+DSPs: 1248 (col length:96)
+BRAMs: 288 (col length: RAMB18 96 RAMB36 48)
+---------------------------------------------------------------------------------
+Finished Part Resource Summary
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Cross Boundary and Area Optimization
+---------------------------------------------------------------------------------
+WARNING: [Synth 8-7080] Parallel synthesis criteria is not met
+INFO: [Synth 8-6904] The RAM "inst/grp_infer_fu_144/gate_f_U/ram_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/grp_infer_fu_144/gate_i_U/ram_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/grp_infer_fu_144/stat_C_U/ram_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/grp_infer_fu_144/C_t_U/ram_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/grp_infer_fu_144/gate_o_U/ram_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/grp_infer_fu_144/h_t_U/ram_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/grp_infer_fu_144/vec_i_U/ram_reg" of size (depth=133 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/grp_infer_fu_144/vec_tmp_U/ram_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/buf_in_U/ram_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/grp_infer_fu_144/gate_f_U/ram_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/grp_infer_fu_144/gate_i_U/ram_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/grp_infer_fu_144/stat_C_U/ram_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/grp_infer_fu_144/C_t_U/ram_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/grp_infer_fu_144/gate_o_U/ram_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/grp_infer_fu_144/h_t_U/ram_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/grp_infer_fu_144/vec_i_U/ram_reg" of size (depth=133 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/grp_infer_fu_144/vec_tmp_U/ram_reg" of size (depth=128 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-6904] The RAM "inst/buf_in_U/ram_reg" of size (depth=100 x width=32) is automatically implemented using LUTRAM. BRAM implementation would be inefficient 
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_15_viv.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_15_viv.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[1]) is unused and will be removed from module floating_point_v7_1_15_viv__parameterized7.
+INFO: [Synth 8-3332] Sequential element (ADDSUB_OP.ADDSUB/DSP.OP/DSP48E1_BODY.NORM_RND/FULL_USAGE_DSP.LOD/dist_norm_reg[0]) is unused and will be removed from module floating_point_v7_1_15_viv__parameterized7.
+---------------------------------------------------------------------------------
+Finished Cross Boundary and Area Optimization : Time (s): cpu = 00:02:05 ; elapsed = 00:02:15 . Memory (MB): peak = 2286.113 ; gain = 787.570
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Applying XDC Timing Constraints
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Applying XDC Timing Constraints : Time (s): cpu = 00:02:25 ; elapsed = 00:02:36 . Memory (MB): peak = 2855.309 ; gain = 1356.766
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Timing Optimization
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Timing Optimization : Time (s): cpu = 00:02:30 ; elapsed = 00:02:40 . Memory (MB): peak = 2902.301 ; gain = 1403.758
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Technology Mapping
+---------------------------------------------------------------------------------
+INFO: [Synth 8-7052] The timing for the instance inst/grp_infer_fu_144/grp_infer_Pipeline_VITIS_LOOP_193_15_fu_177/Weight_lc_0_U/q0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+INFO: [Synth 8-7052] The timing for the instance inst/grp_infer_fu_144/grp_infer_Pipeline_VITIS_LOOP_193_15_fu_177/Weight_lc_0_U/q0_reg (implemented as a Block RAM) might be sub-optimal as no optional output register could be merged into the ram block. Providing additional output register may help in improving timing.
+---------------------------------------------------------------------------------
+Finished Technology Mapping : Time (s): cpu = 00:02:38 ; elapsed = 00:02:49 . Memory (MB): peak = 3105.496 ; gain = 1606.953
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Flattening Before IO Insertion
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Final Netlist Cleanup
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished IO Insertion : Time (s): cpu = 00:02:45 ; elapsed = 00:02:56 . Memory (MB): peak = 3122.168 ; gain = 1623.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Instances
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Instances : Time (s): cpu = 00:02:45 ; elapsed = 00:02:56 . Memory (MB): peak = 3122.168 ; gain = 1623.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Rebuilding User Hierarchy
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Rebuilding User Hierarchy : Time (s): cpu = 00:02:46 ; elapsed = 00:02:58 . Memory (MB): peak = 3122.168 ; gain = 1623.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Ports
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Ports : Time (s): cpu = 00:02:46 ; elapsed = 00:02:58 . Memory (MB): peak = 3122.168 ; gain = 1623.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Handling Custom Attributes
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Handling Custom Attributes : Time (s): cpu = 00:02:47 ; elapsed = 00:02:58 . Memory (MB): peak = 3122.168 ; gain = 1623.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Renaming Generated Nets
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Finished Renaming Generated Nets : Time (s): cpu = 00:02:47 ; elapsed = 00:02:58 . Memory (MB): peak = 3122.168 ; gain = 1623.625
+---------------------------------------------------------------------------------
+---------------------------------------------------------------------------------
+Start Writing Synthesis Report
+---------------------------------------------------------------------------------
+
+DSP Final Report (the ' indicates corresponding REG is set)
++-----------------------------------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|Module Name                                    | DSP Mapping     | A Size | B Size | C Size | D Size | P Size | AREG | BREG | CREG | DREG | ADREG | MREG | PREG | 
++-----------------------------------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+|dsp48e1_wrapper_292                            | Dynamic         | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0_252            | C+A'*B'         | 24     | 16     | 35     | -      | 35     | 1    | 1    | 1    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper                                | Dynamic         | -      | -      | -      | -      | 40     | -    | -    | -    | -    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized0                | C+A'*B'         | 24     | 16     | 35     | -      | 35     | 1    | 1    | 1    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized8_61             | (C+D+A*B)'      | 6      | 17     | 43     | 16     | 43     | 0    | 0    | 0    | 0    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized6_124            | Dynamic         | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized6_123            | Dynamic         | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized7_122            | Dynamic         | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized4_119            | C+A:B           | 0      | 6      | 0      | -      | 48     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized5_118            | (C+A:B)'        | 30     | 18     | 48     | -      | 48     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized9_111            | Dynamic         | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized8                | (C+D+A*B)'      | 6      | 17     | 43     | 16     | 43     | 0    | 0    | 0    | 0    | 0     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized6_57             | Dynamic         | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized6                | Dynamic         | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized7                | Dynamic         | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized4                | C+A:B           | 0      | 6      | 0      | -      | 48     | 0    | 0    | 0    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized5                | (C+A:B)'        | 30     | 18     | 48     | -      | 48     | 0    | 0    | 0    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized9                | Dynamic         | -      | -      | -      | -      | 48     | -    | -    | -    | -    | -     | 0    | 0    | 
+|dsp48e1_wrapper__parameterized1                | (A*B)'          | 24     | 17     | -      | -      | 41     | 0    | 0    | -    | -    | -     | 0    | 1    | 
+|dsp48e1_wrapper__parameterized2                | PCIN>>17+(A*B)' | 0      | 7      | -      | -      | 31     | 0    | 0    | -    | -    | -     | 1    | 0    | 
+|dsp48e1_wrapper__parameterized3                | PCIN+A:B+C      | 22     | 0      | -      | -      | 48     | 0    | 0    | -    | -    | -     | 0    | 0    | 
+|LSTM_Top_mac_muladd_8ns_8ns_8ns_15_4_1_DSP48_0 | C'+(A'*B)'      | 8      | 8      | 8      | -      | 15     | 1    | 0    | 0    | -    | -     | 1    | 0    | 
+|LSTM_Top_mac_muladd_8ns_8ns_8ns_15_4_1_DSP48_0 | C'+(A'*B)'      | 8      | 8      | 8      | -      | 15     | 1    | 0    | 0    | -    | -     | 1    | 0    | 
+|LSTM_Top_mac_muladd_8ns_8ns_8ns_15_4_1_DSP48_0 | C'+(A'*B)'      | 8      | 8      | 8      | -      | 15     | 1    | 0    | 0    | -    | -     | 1    | 0    | 
+|LSTM_Top_mac_muladd_8ns_8ns_8ns_15_4_1_DSP48_0 | C'+(A'*B)'      | 8      | 8      | 8      | -      | 15     | 1    | 0    | 0    | -    | -     | 1    | 0    | 
++-----------------------------------------------+-----------------+--------+--------+--------+--------+--------+------+------+------+------+-------+------+------+
+
+
+Report BlackBoxes: 
++-+--------------+----------+
+| |BlackBox name |Instances |
++-+--------------+----------+
++-+--------------+----------+
+
+Report Cell Usage: 
++------+----------------+------+
+|      |Cell            |Count |
++------+----------------+------+
+|1     |CARRY8          |     8|
+|2     |DSP48E1         |    21|
+|3     |DSP_ALU         |     4|
+|4     |DSP_A_B_DATA    |     4|
+|5     |DSP_C_DATA      |     4|
+|6     |DSP_MULTIPLIER  |     4|
+|7     |DSP_M_DATA      |     4|
+|8     |DSP_OUTPUT      |     4|
+|9     |DSP_PREADD      |     4|
+|10    |DSP_PREADD_DATA |     4|
+|11    |LUT1            |    27|
+|12    |LUT2            |   488|
+|13    |LUT3            |  1358|
+|14    |LUT4            |   648|
+|15    |LUT5            |   605|
+|16    |LUT6            |  2335|
+|17    |MUXCY           |   926|
+|18    |MUXF7           |   394|
+|19    |MUXF8           |     4|
+|20    |RAM128X1D       |    32|
+|21    |RAM128X1S       |   224|
+|22    |RAM16X1S        |    64|
+|23    |RAM32X1S        |    32|
+|24    |RAM64X1S        |    32|
+|25    |RAMB18E2        |     5|
+|30    |RAMB36E2        |   120|
+|148   |SRL16E          |   125|
+|149   |SRLC32E         |    45|
+|150   |XORCY           |   717|
+|151   |FDE             |    10|
+|152   |FDRE            |  3678|
+|153   |FDSE            |    21|
++------+----------------+------+
+---------------------------------------------------------------------------------
+Finished Writing Synthesis Report : Time (s): cpu = 00:02:47 ; elapsed = 00:02:58 . Memory (MB): peak = 3122.168 ; gain = 1623.625
+---------------------------------------------------------------------------------
+Synthesis finished with 0 errors, 0 critical warnings and 508 warnings.
+Synthesis Optimization Runtime : Time (s): cpu = 00:01:56 ; elapsed = 00:02:40 . Memory (MB): peak = 3122.168 ; gain = 1501.555
+Synthesis Optimization Complete : Time (s): cpu = 00:02:47 ; elapsed = 00:02:58 . Memory (MB): peak = 3122.168 ; gain = 1623.625
+INFO: [Project 1-571] Translating synthesized netlist
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.359 . Memory (MB): peak = 3131.191 ; gain = 0.000
+INFO: [Netlist 29-17] Analyzing 2468 Unisim elements for replacement
+INFO: [Netlist 29-28] Unisim Transformation completed in 1 CPU seconds
+INFO: [Project 1-570] Preparing netlist for logic optimization
+INFO: [Opt 31-138] Pushed 0 inverter(s) to 0 load pin(s).
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/grp_infer_fu_144/grp_infer_Pipeline_VITIS_LOOP_114_4_VITIS_LOOP_116_5_fu_191/mac_muladd_8ns_8ns_8ns_15_4_1_U23/LSTM_Top_mac_muladd_8ns_8ns_8ns_15_4_1_DSP48_0_U/p_reg_reg_0_28 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/grp_infer_fu_144/grp_infer_Pipeline_VITIS_LOOP_114_4_VITIS_LOOP_116_5_fu_191/mac_muladd_8ns_8ns_8ns_15_4_1_U23/LSTM_Top_mac_muladd_8ns_8ns_8ns_15_4_1_DSP48_0_U/p_reg_reg_0_29 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/grp_infer_fu_144/grp_infer_Pipeline_VITIS_LOOP_114_4_VITIS_LOOP_116_5_fu_191/select_ln114_2_reg_306_pp0_iter1_reg_reg_rep has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/grp_infer_fu_144/grp_infer_Pipeline_VITIS_LOOP_128_6_VITIS_LOOP_130_7_fu_207/select_ln128_2_reg_306_pp0_iter1_reg_reg_rep has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/grp_infer_fu_144/grp_infer_Pipeline_VITIS_LOOP_142_8_VITIS_LOOP_144_9_fu_223/mac_muladd_8ns_8ns_8ns_15_4_1_U48/LSTM_Top_mac_muladd_8ns_8ns_8ns_15_4_1_DSP48_0_U/p_reg_reg_0_28 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/grp_infer_fu_144/grp_infer_Pipeline_VITIS_LOOP_142_8_VITIS_LOOP_144_9_fu_223/mac_muladd_8ns_8ns_8ns_15_4_1_U48/LSTM_Top_mac_muladd_8ns_8ns_8ns_15_4_1_DSP48_0_U/p_reg_reg_0_29 has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/grp_infer_fu_144/grp_infer_Pipeline_VITIS_LOOP_142_8_VITIS_LOOP_144_9_fu_223/select_ln142_2_reg_306_pp0_iter1_reg_reg_rep has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/grp_infer_fu_144/grp_infer_Pipeline_VITIS_LOOP_156_10_VITIS_LOOP_158_11_fu_239/select_ln156_2_reg_306_pp0_iter1_reg_reg_rep has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+INFO: [Opt 31-422] The CLOCK_DOMAINS attribute on the BRAM cell inst/grp_infer_fu_144/grp_infer_Pipeline_VITIS_LOOP_193_15_fu_177/Weight_lc_0_U/q0_reg has been changed from INDEPENDENT to COMMON to match the clocking topology used for the BRAM.
+Netlist sorting complete. Time (s): cpu = 00:00:00 ; elapsed = 00:00:00.008 . Memory (MB): peak = 3161.262 ; gain = 0.000
+INFO: [Project 1-111] Unisim Transformation Summary:
+  A total of 579 instances were transformed.
+  (CARRY4) => CARRY8: 160 instances
+  DSP48E1 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 21 instances
+  DSP48E2 => DSP48E2 (DSP_ALU, DSP_A_B_DATA, DSP_C_DATA, DSP_MULTIPLIER, DSP_M_DATA, DSP_OUTPUT, DSP_PREADD, DSP_PREADD_DATA): 4 instances
+  FDE => FDRE: 10 instances
+  RAM128X1D => RAM128X1D (MUXF7(x2), RAMD64E(x4)): 32 instances
+  RAM128X1S => RAM128X1S (MUXF7, RAMS64E(x2)): 224 instances
+  RAM16X1S => RAM32X1S (RAMS32): 64 instances
+  RAM32X1S => RAM32X1S (RAMS32): 32 instances
+  RAM64X1S => RAM64X1S (RAMS64E): 32 instances
+
+Synth Design complete | Checksum: e64bcf68
+INFO: [Common 17-83] Releasing license: Synthesis
+219 Infos, 202 Warnings, 0 Critical Warnings and 0 Errors encountered.
+synth_design completed successfully
+synth_design: Time (s): cpu = 00:03:03 ; elapsed = 00:03:18 . Memory (MB): peak = 3161.262 ; gain = 2638.453
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.runs/design_1_LSTM_Top_0_5_synth_1/design_1_LSTM_Top_0_5.dcp' has been generated.
+INFO: [Coretcl 2-1648] Added synthesis output to IP cache for IP design_1_LSTM_Top_0_5, cache-ID = 740dedf2c2c4cb60
+INFO: [Coretcl 2-1174] Renamed 501 cell refs.
+INFO: [Common 17-1381] The checkpoint 'C:/Users/ljh/Desktop/mnist_lstm/mnist_lstm/mnist_lstm.runs/design_1_LSTM_Top_0_5_synth_1/design_1_LSTM_Top_0_5.dcp' has been generated.
+INFO: [runtcl-4] Executing : report_utilization -file design_1_LSTM_Top_0_5_utilization_synth.rpt -pb design_1_LSTM_Top_0_5_utilization_synth.pb
+INFO: [Common 17-206] Exiting Vivado at Wed May 15 15:59:48 2024...
